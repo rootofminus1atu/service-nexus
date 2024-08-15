@@ -1,0 +1,14 @@
+[package]
+name = "service-nexus"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+poise = "0.6.1"
+shuttle-serenity = "0.45.0"
+axum = "0.7.5"
+shuttle-axum = "0.45.0"
+shuttle-runtime = "0.45.0"
+tracing = "0.1.37"
+tokio = { version = "1.26.0", features = ["full"] }
+async-trait = "0.1.81"
