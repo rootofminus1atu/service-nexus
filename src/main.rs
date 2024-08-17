@@ -1,14 +1,12 @@
-use axum::{routing::get, Router};
+use axum::Router;
 use bot::setup_discord_bot;
-use poise::serenity_prelude::{self as serenity, ClientBuilder};
 use shuttle_runtime::SecretStore;
-use shuttle_runtime::__internals::Context;
 use axum::ServiceExt;
-use shuttle_serenity::ShuttleSerenity;
 use web::setup_web_server;
 
 pub mod web;
 pub mod bot;
+pub mod helpers;
 
 pub struct CustomService {
     // discord_bot: serenity::Client,
