@@ -25,18 +25,21 @@ pub fn routes(db: mongodb::Database) -> Router {
 
 #[derive(Debug, thiserror::Error)]
 pub enum Error {
+    // 500s
     #[error("MongoDB cats error: {0}")]
     CatDbError(#[from] mongodb::error::Error),
     #[error("Cat reqwest error: {0}")]
     CatReqwestError(#[from] reqwest::Error),
-    #[error("Cat with id {id} not found")]
-    NotFound { id: String },
     #[error("No cat was delivered from RandomCatAPI")]
     NoCatsFromRandomCatApi,
     #[error("No breeds were delivered from RandomCatAPI")]
     NoBreedsFromRandomCatApi,
     #[error("No random user was delievered from RandomUserAPI")]
     NoPeopleFromRandomUserApi,
+
+    // 400s
+    #[error("Cat with id {id} not found")]
+    NotFound { id: String },
 }
 
 impl IntoResponse for Error {

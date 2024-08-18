@@ -7,3 +7,5 @@
 - [ ] maybe optimize /cats/random to do some fetches at the same time
 
 - [ ] double check how to clone ClientWithKeys in an Arc-y way
+
+- [ ] clean up the supabase struct
