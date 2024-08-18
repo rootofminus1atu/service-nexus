@@ -5,6 +5,7 @@ use shuttle_runtime::__internals::Context;
 use tracing::info;
 
 mod cats;
+mod timetable;
 
 pub async fn setup_web_server(secret_store: &SecretStore) -> Result<Router, shuttle_runtime::Error> {
     let cat_api_key = secret_store.get("CAT_API_KEY")
@@ -26,6 +27,7 @@ pub async fn setup_web_server(secret_store: &SecretStore) -> Result<Router, shut
 
     let router = Router::new()
         .nest("/cats", self::cats::routes(db))
+        .nest("/timetable", self::timetable::routes())
         .layer(Extension(client));
 
     Ok(router)
