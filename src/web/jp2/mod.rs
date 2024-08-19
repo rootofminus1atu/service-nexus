@@ -1,4 +1,5 @@
 use std::sync::Arc;
+use axum::response::Redirect;
 use axum::{response::IntoResponse, Extension, Json, Router, http::StatusCode, routing::get};
 use serde::{Deserialize, Serialize};
 use tower_http::services::ServeDir;
@@ -23,6 +24,7 @@ pub fn routes(supabase: Arc<SupabaseResources>) -> Router {
         .nest("/images", images::routes())
         .nest_service("/", ServeDir::new("public"))
         .route("/doc.json", get(|| async { Json(openapi) } ))
+        .route("/", get(|| async { Redirect::permanent("/index.html") }))
         .layer(Extension(supabase))
 }
 

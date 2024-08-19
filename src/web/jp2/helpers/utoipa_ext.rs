@@ -26,7 +26,7 @@ fn extend_paths_by_tags(mut paths: Paths, prefix: &str) -> Paths {
     let mut builder = PathsBuilder::from(paths);
 
     for (name, item) in existing_paths {
-        info!("Prev path: {}", name);
+        // info!("Prev path: {}", name);
 
         // should work as long as rule 2 is followed
         let tag = item.operations.first_key_value()
@@ -38,7 +38,7 @@ fn extend_paths_by_tags(mut paths: Paths, prefix: &str) -> Paths {
         // adjustment converts paths like `/dogs/` into `/dogs`
         let adjusted_name = if name == "/" { "" } else { &name };
         let new_name = format!("{}/{}{}", prefix, tag, adjusted_name);
-        info!("New path:  {}", new_name);
+        // info!("New path:  {}", new_name);
 
         // Update the builder with the new path
         builder = builder.path(new_name, item);

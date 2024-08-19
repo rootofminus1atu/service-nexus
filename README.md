@@ -9,3 +9,4 @@
 - [ ] double check how to clone ClientWithKeys in an Arc-y way
 
 - [ ] clean up the supabase struct
+- [ ] fix public asset serving (idea: put it in public/jp2 instead of just public)
