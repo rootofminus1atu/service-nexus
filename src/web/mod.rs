@@ -3,6 +3,7 @@ use axum::{Extension, Router};
 use serde::{Deserialize, Serialize};
 use shuttle_runtime::SecretStore;
 use sqlx::PgPool;
+use tower_http::cors::{self, CorsLayer};
 use utoipa::ToSchema;
 use tracing::info;
 
@@ -56,7 +57,13 @@ pub async fn setup_web_server(secret_store: &SecretStore) -> Result<Router, shut
         .nest("/cats", self::cats::routes(mongo_db))
         .nest("/timetable", self::timetable::routes())
         .nest("/jp2", self::jp2::routes(supabase))
-        .layer(Extension(client));
+        .layer(Extension(client))
+        .layer(CorsLayer::new()
+            .allow_origin(cors::Any)
+            .allow_methods(cors::Any)
+            .allow_headers(cors::Any)
+            .allow_credentials(true)
+        );
 
     Ok(router)
 }
