@@ -29,15 +29,28 @@ pub async fn get_random(State(cats): State<Collection<Cat>>, Extension(client): 
     info!("=== /cats/random start ===");
 
     let start_time = Instant::now();
-    let cat = client.client
+    let response = client.client
         .get(format!("https://api.thecatapi.com/v1/images/search?api_key={}&has_breeds=1", client.cat_api_key.clone()))
         .send()
-        .await?
-        .json::<Vec<CatUnprocessed>>()
-        .await?
-        .into_iter()
-        .next()  // because this req returns a vec, not a single cat, its always 1 cat anywa, or should be
+        .await?;
+
+    let response_text = response.text().await?;
+    info!("Response text: {}", response_text);
+
+    let cat: Vec<CatUnprocessed> = serde_json::from_str(&response_text)?;
+    let cat = cat.into_iter()
+        .next()  // because this req returns a vec, not a single cat, its always 1 cat anyway, or should be
         .ok_or(super::Error::NoCatsFromRandomCatApi)?;
+
+    // let cat = client.client
+    //     .get(format!("https://api.thecatapi.com/v1/images/search?api_key={}&has_breeds=1", client.cat_api_key.clone()))
+    //     .send()
+    //     .await?
+    //     .json::<Vec<CatUnprocessed>>()
+    //     .await?
+    //     .into_iter()
+    //     .next()  // because this req returns a vec, not a single cat, its always 1 cat anywa, or should be
+    //     .ok_or(super::Error::NoCatsFromRandomCatApi)?;
     info!("fetching catapi: {:?}", start_time.elapsed());
     // look it up in db
     

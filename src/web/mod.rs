@@ -62,7 +62,6 @@ pub async fn setup_web_server(secret_store: &SecretStore) -> Result<Router, shut
             .allow_origin(cors::Any)
             .allow_methods(cors::Any)
             .allow_headers(cors::Any)
-            .allow_credentials(true)
         );
 
     Ok(router)

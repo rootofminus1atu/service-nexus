@@ -37,6 +37,9 @@ pub enum Error {
     #[error("No random user was delievered from RandomUserAPI")]
     NoPeopleFromRandomUserApi,
 
+    #[error("NOOOOO: {0} also {0:?}")]
+    JsonParseError(#[from] serde_json::Error),
+
     // 400s
     #[error("Cat with id {id} not found")]
     NotFound { id: String },

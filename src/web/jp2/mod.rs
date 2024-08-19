@@ -24,7 +24,7 @@ pub fn routes(supabase: Arc<SupabaseResources>) -> Router {
         .nest("/images", images::routes())
         .nest_service("/", ServeDir::new("public"))
         .route("/doc.json", get(|| async { Json(openapi) } ))
-        .route("/", get(|| async { Redirect::permanent("/index.html") }))
+        // .route("/", get(|| async { Redirect::permanent("/index.html") }))
         .layer(Extension(supabase))
 }
 

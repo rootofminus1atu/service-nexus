@@ -16,7 +16,7 @@ pub async fn get_random_name_from_country(country_code: &str, client: ClientWith
     }  else {
         random_choice(COUNTRY_CODES).unwrap().to_string()
     };
-    
+
     let person = client.client
         .get(format!("https://randomuser.me/api/?nat={}", country_code))
         .send()
@@ -44,16 +44,18 @@ struct RandomPersonResponse {
     results: Vec<RandomPerson>
 }
 
+#[allow(dead_code)]
 #[derive(Debug, Clone, Deserialize)]
 struct RandomPerson {
-    _gender: String,
+    gender: String,
     name: RandomPersonName,
-    _nat: String
+    nat: String
 }
 
+#[allow(dead_code)]
 #[derive(Debug, Clone, Deserialize)]
 struct RandomPersonName {
-    _title: String,
+    title: String,
     first: String,
-    _last: String
+    last: String
 }
