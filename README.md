@@ -4,11 +4,11 @@ Tfw no money so you fuse your apis and other services into this
 
 ## Services fused: 
 
-- (TimetablesV2)[https://github.com/rootofminus1atu/timetables-v2] lambda
+- [TimetablesV2](https://github.com/rootofminus1atu/timetables-v2) lambda
 
-- (UnboxCat)[https://github.com/rootofminus1atu/unboxcat] backend - Had to rewrite an expressjs app for this to work, it was fun though.
+- [UnboxCat](https://github.com/rootofminus1atu/unboxcat) backend - Had to rewrite an expressjs app for this to work, it was fun though.
 
-- (TheJp2Api)[https://github.com/rootofminus1atu/jp2cenzoapi] - only temporarily here. It will have its own place by the start of next month.
+- [TheJp2Api](https://github.com/rootofminus1atu/jp2cenzoapi) - only temporarily here. It will have its own place by the start of next month.
 
 
 ## Todos:
