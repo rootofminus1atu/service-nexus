@@ -10,6 +10,7 @@ use tracing::info;
 mod cats;
 mod timetable;
 mod jp2;
+mod tf2sc;
 
 /// ## senv = shuttle env
 /// Reads a shuttle secret from `SecretStore`, crashes the program if an env var with that name is not found.
@@ -36,6 +37,7 @@ pub async fn setup_web_server(secret_store: &SecretStore) -> Result<Router, shut
     let mongo_uri = senv!(secret_store, MONGO_URI);
     let database_url = senv!(secret_store, DATABASE_URL);
     let supabase_url = senv!(secret_store, SUPABASE_URL);
+    let neon_url = senv!(secret_store, NEON_URL);
 
 
     let mongo_client = mongodb::Client::with_uri_str(mongo_uri).await
@@ -50,6 +52,10 @@ pub async fn setup_web_server(secret_store: &SecretStore) -> Result<Router, shut
     let supabase = Arc::new(SupabaseResources::new(supabase_db, supabase_storage));
     info!("created supabase");
 
+    let neon_db = PgPool::connect(&neon_url).await
+        .map_err(|e| shuttle_runtime::Error::Database(format!("could not connect to neon: {}", e)))?;
+    info!("connected to neon");
+
     let client = ClientWithKeys::new(cat_api_key);
     info!("created new reqwest client");
 
@@ -57,6 +63,7 @@ pub async fn setup_web_server(secret_store: &SecretStore) -> Result<Router, shut
         .nest("/cats", self::cats::routes(mongo_db))
         .nest("/timetable", self::timetable::routes())
         .nest("/jp2", self::jp2::routes(supabase))
+        .nest("/tf2sc", self::tf2sc::routes(neon_db))
         .layer(Extension(client))
         .layer(CorsLayer::new()
             .allow_origin(cors::Any)

@@ -1,10 +1,8 @@
 use std::sync::Arc;
-use axum::response::Redirect;
 use axum::{response::IntoResponse, Extension, Json, Router, http::StatusCode, routing::get};
 use serde::{Deserialize, Serialize};
 use tower_http::services::ServeDir;
 use tracing::error;
-use utoipa::openapi;
 use utoipa::ToSchema;
 use utoipa::OpenApi;
 use self::helpers::utoipa_ext::nest_openapis_at_prefix;

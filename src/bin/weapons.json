@@ -1,0 +1,2411 @@
+[
+    {
+        "_id": 35,
+        "name": "The Kritzkrieg",
+        "stock": false,
+        "item_name": "#TF_Unique_Achievement_Medigun1",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_overhealer.0a4788b6ea1de4492af02eee8874582477ee7dd4.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_overhealer_large.ae4b95d05aa93b1c4230078081ba335745130058.png",
+        "used_by_classes": [
+            "Medic"
+        ]
+    },
+    {
+        "_id": 36,
+        "name": "The Blutsauger",
+        "stock": false,
+        "item_name": "#TF_Unique_Achievement_Syringegun1",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_leechgun.17ad5ab7b1ab4bd7f0d180c555894b881d60bb44.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_leechgun_large.bcc719bf7f898cf74ac7faabbde7ab02644b36b1.png",
+        "used_by_classes": [
+            "Medic"
+        ]
+    },
+    {
+        "_id": 37,
+        "name": "The Ubersaw",
+        "stock": false,
+        "item_name": "#TF_Unique_Achievement_Bonesaw1",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_ubersaw.18124fa3ac864e30c5bef5b1ffb13c4ab29e70ca.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_ubersaw_large.a7f3a79c2dc2f23f0e5060b37d581c1f0e9d653f.png",
+        "used_by_classes": [
+            "Medic"
+        ]
+    },
+    {
+        "_id": 38,
+        "name": "The Axtinguisher",
+        "stock": false,
+        "item_name": "#TF_Unique_Achievement_FireAxe1",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_axtinguisher_pyro.9a85337ea458516297611e22a54863276af5c704.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_axtinguisher_pyro_large.c67fe385d1aa50f9db8b600100197ccd96a39922.png",
+        "used_by_classes": [
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 39,
+        "name": "The Flare Gun",
+        "stock": false,
+        "item_name": "#TF_Unique_Achievement_Flaregun",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_flaregun_pyro.873aa41664ef4dad38eb15eb2f753350876516df.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_flaregun_pyro_large.e6631254f42107f0f3817bd321971d461fbb1bc5.png",
+        "used_by_classes": [
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 40,
+        "name": "The Backburner",
+        "stock": false,
+        "item_name": "#TF_Unique_Achievement_Flamethrower",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_backburner.b455b3f6640713bd9d1ea3ea07301a9df0e83aa5.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_backburner_large.6ed4e0913005b8d4826a98267c99e8356ad2a2d5.png",
+        "used_by_classes": [
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 41,
+        "name": "Natascha",
+        "stock": false,
+        "item_name": "#TF_Unique_Achievement_Minigun",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_w_ludmila.1cc9040376abc2982600726a81d4d3a448be2cf2.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_w_ludmila_large.24f7a5d2937c9bcc9302ebab8b45c6cb6f73a9e2.png",
+        "used_by_classes": [
+            "Heavy"
+        ]
+    },
+    {
+        "_id": 42,
+        "name": "The Sandvich",
+        "stock": false,
+        "item_name": "#TF_Unique_Achievement_LunchBox",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_sandwich.03facb91eda7753f68d470f9ecf5ea3b8a013e97.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_sandwich_large.ea6a82a8177df4ba5f19fe70d5183d888f1e68ed.png",
+        "used_by_classes": [
+            "Heavy"
+        ]
+    },
+    {
+        "_id": 43,
+        "name": "The Killing Gloves of Boxing",
+        "stock": false,
+        "item_name": "#TF_Unique_Achievement_Fists",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_boxing_gloves.d18bedf78b2e979b45b4162ff67d95994c419a9c.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_boxing_gloves_large.c7a97998efd70448573e3dd4cf51e4f2b3c34dd9.png",
+        "used_by_classes": [
+            "Heavy"
+        ]
+    },
+    {
+        "_id": 44,
+        "name": "The Sandman",
+        "stock": false,
+        "item_name": "#TF_Unique_Achievement_Bat",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_wooden_bat.52825cfc8edc360b304e4dc90bc2bcd6fc516126.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_wooden_bat_large.4aa909d2f2f7bbe7eda071d7284c4c22bfc84d0f.png",
+        "used_by_classes": [
+            "Scout"
+        ]
+    },
+    {
+        "_id": 45,
+        "name": "The Force-a-Nature",
+        "stock": false,
+        "item_name": "#TF_Unique_Achievement_Scattergun_Double",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_double_barrel.6fd2c08f10f4bf24ff0aed373f75531fed4b655d.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_double_barrel_large.9ab38a942dfb488628d0c4db8b0e59fe57baa5ae.png",
+        "used_by_classes": [
+            "Scout"
+        ]
+    },
+    {
+        "_id": 46,
+        "name": "Bonk! Atomic Punch",
+        "stock": false,
+        "item_name": "#TF_Unique_Achievement_EnergyDrink",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_energy_drink.ab509fe2b63c5a8dd9033dadafa6892f921281b4.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_energy_drink_large.e43b8b1df90bb03783acc43645d202adbd0d8df0.png",
+        "used_by_classes": [
+            "Scout"
+        ]
+    },
+    {
+        "_id": 56,
+        "name": "The Huntsman",
+        "stock": false,
+        "item_name": "#TF_Unique_Achievement_CompoundBow",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_bow.bb0bc291598f5754f569d31263840a7335b66618.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_bow_large.20c071267d241285a73340433fe1f4ac6135e5bf.png",
+        "used_by_classes": [
+            "Sniper"
+        ]
+    },
+    {
+        "_id": 57,
+        "name": "The Razorback",
+        "stock": false,
+        "item_name": "#TF_Unique_Backstab_Shield",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/knife_shield.d32ee782841ae325c17664770e41a3dc388a227a.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/knife_shield_large.d635d2c5460324762cb0686e0dd5eaa7235966e4.png",
+        "used_by_classes": [
+            "Sniper"
+        ]
+    },
+    {
+        "_id": 58,
+        "name": "Jarate",
+        "stock": false,
+        "item_name": "#TF_Unique_Achievement_Jar",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/urinejar.d200bce37621662a0cf4b979dbfc8bfd9b9fb061.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/urinejar_large.db2a52cc70732fd022e2c0b731c9756caa1745a2.png",
+        "used_by_classes": [
+            "Sniper"
+        ]
+    },
+    {
+        "_id": 61,
+        "name": "The Ambassador",
+        "stock": false,
+        "item_name": "#TF_Unique_Achievement_Revolver",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_ambassador_opt.c77df73f2232502b7162cbeb6068f56f09d36d51.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_ambassador_opt_large.d2bdb5445b824134b3e66ee0604555f395eac979.png",
+        "used_by_classes": [
+            "Spy"
+        ]
+    },
+    {
+        "_id": 127,
+        "name": "The Direct Hit",
+        "stock": false,
+        "item_name": "#TF_Unique_Achievement_RocketLauncher",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_directhit.cb9d76ebed0466a6ecd14ca74c15b68256f682c7.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_directhit_large.31d7e610cd6d9b13c0df674b4f344b1133032374.png",
+        "used_by_classes": [
+            "Soldier"
+        ]
+    },
+    {
+        "_id": 128,
+        "name": "The Equalizer",
+        "stock": false,
+        "item_name": "#TF_Unique_Achievement_Pickaxe",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_pickaxe_s2.89cc864a8f8b6d4b0fafb0cf054696cdd51824fc.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_pickaxe_s2_large.96cfe212fd6c7abb959e5f637b34db0d5f937ea7.png",
+        "used_by_classes": [
+            "Soldier"
+        ]
+    },
+    {
+        "_id": 129,
+        "name": "The Buff Banner",
+        "stock": false,
+        "item_name": "#TF_Unique_Achievement_SoldierBuff",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_buffpack.ec1bdf7e5e618b22790fac5af8b37ca2fe43b0f9.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_buffpack_large.f2be3e5364b2e03f8c02255b763b76a7f6e74e14.png",
+        "used_by_classes": [
+            "Soldier"
+        ]
+    },
+    {
+        "_id": 130,
+        "name": "The Scottish Resistance",
+        "stock": false,
+        "item_name": "#TF_Unique_Achievement_StickyLauncher",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/w_stickybomb_defender.1ed3dbd354148f470f5fd72e48e1ee672f37609f.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/w_stickybomb_defender_large.5eb3493192c2782e9a039bcfefc98c5beb03ab97.png",
+        "used_by_classes": [
+            "Demoman"
+        ]
+    },
+    {
+        "_id": 131,
+        "name": "The Chargin' Targe",
+        "stock": false,
+        "item_name": "#TF_Unique_Achievement_Shield",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_targe.2f2c6d5e62347479380104bed97544f768532cef.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_targe_large.8d2b1d62d0e43a303df8f5071e4a710edb4cfdf4.png",
+        "used_by_classes": [
+            "Demoman"
+        ]
+    },
+    {
+        "_id": 132,
+        "name": "The Eyelander",
+        "stock": false,
+        "item_name": "#TF_Unique_Achievement_Sword",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_claymore.012ceabd57fe3a69284cf4b1e26b0c5ad6e5ab26.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_claymore_large.713b667030580865901e4a6ee06b9f88cb0a0e91.png",
+        "used_by_classes": [
+            "Demoman"
+        ]
+    },
+    {
+        "_id": 133,
+        "name": "The Gunboats",
+        "stock": false,
+        "item_name": "#TF_Unique_Blast_Boots",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_rocketboots_soldier.88702c0dabbb26430b7e69e4b39026a49a640307.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_rocketboots_soldier_large.af7685c822ae57271d5d41f9ced29c14348c24dc.png",
+        "used_by_classes": [
+            "Soldier"
+        ]
+    },
+    {
+        "_id": 140,
+        "name": "The Wrangler",
+        "stock": false,
+        "item_name": "#TF_Unique_Achievement_Laser_Pointer",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_wrangler.fb1e54c81f06acfb4dabe1b909d5ed6a093bc48f.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_wrangler_large.72d81170a3a8fda27fb834649bcff626692486c9.png",
+        "used_by_classes": [
+            "Engineer"
+        ]
+    },
+    {
+        "_id": 141,
+        "name": "The Frontier Justice",
+        "stock": false,
+        "item_name": "#TF_Unique_Sentry_Shotgun",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_frontierjustice.541b4e2c10983011c6669bba953730dbd5fb970c.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_frontierjustice_large.b962b00b10deb91d2168e2c1e43bfd40a02362ca.png",
+        "used_by_classes": [
+            "Engineer"
+        ]
+    },
+    {
+        "_id": 142,
+        "name": "The Gunslinger",
+        "stock": false,
+        "item_name": "#TF_Unique_Robot_Arm",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/gunslinger.f6030adf78acc107d937c74904d7358a84648355.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/gunslinger_large.4ede73e32c3736bf0af04bdea72f2683921cddd1.png",
+        "used_by_classes": [
+            "Engineer"
+        ]
+    },
+    {
+        "_id": 153,
+        "name": "The Homewrecker",
+        "stock": false,
+        "item_name": "#TF_Unique_SledgeHammer",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_sledgehammer.81d75e72698da3a2c25d007adb5690eb1d59c12e.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_sledgehammer_large.b61773e05d358ad365387963dbc1f490c3a2be00.png",
+        "used_by_classes": [
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 154,
+        "name": "The Pain Train",
+        "stock": false,
+        "item_name": "#TF_Unique_Makeshiftclub",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_paintrain.404e9f91bbdac2b9aa50f2354ec6904cc942bb8c.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_paintrain_large.d756cd898921b47e4203caf6cf60bd3a82592f10.png",
+        "used_by_classes": [
+            "Soldier",
+            "Demoman"
+        ]
+    },
+    {
+        "_id": 155,
+        "name": "The Southern Hospitality",
+        "stock": false,
+        "item_name": "#TF_Unique_Combat_Wrench",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_spikewrench.4946454f7814fe7cbcaebbd26361d50f224dc766.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_spikewrench_large.481f18df57e9603a1a405af66c302b2bdbf9ae6b.png",
+        "used_by_classes": [
+            "Engineer"
+        ]
+    },
+    {
+        "_id": 159,
+        "name": "The Dalokohs Bar",
+        "stock": false,
+        "item_name": "#TF_Unique_Lunchbox_Chocolate",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_chocolate.ff6075c4e4a8052a6c57ffd75b4ee7b27fc74590.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_chocolate_large.56e9964d841910791e3e21524b8f48c4f66a05ee.png",
+        "used_by_classes": [
+            "Heavy"
+        ]
+    },
+    {
+        "_id": 160,
+        "name": "Lugermoth",
+        "stock": false,
+        "item_name": "#TF_TTG_MaxGun",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_ttg_max_gun.de105fe582e8e068da1fc6a483012358ebc3eb35.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_ttg_max_gun_large.afda2413667e2c80a967c59e72fbacdb4db5545f.png",
+        "used_by_classes": [
+            "Scout",
+            "Engineer"
+        ]
+    },
+    {
+        "_id": 161,
+        "name": "Big Kill",
+        "stock": false,
+        "item_name": "#TF_TTG_SamRevolver",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_ttg_sam_gun.1f2ffd771095dc87a43f3fea482ee9911f6d8540.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_ttg_sam_gun_large.247924f2a5fb9f3e74c31d276870ed4bdd6e87e6.png",
+        "used_by_classes": [
+            "Spy"
+        ]
+    },
+    {
+        "_id": 163,
+        "name": "Crit-a-Cola",
+        "stock": false,
+        "item_name": "#TF_Unique_EnergyDrink_CritCola",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_critcola.bda3d14c162fd2ea340f53f04edd25d4adf184a8.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_critcola_large.4af7e21a73f606087def94633f07cea7162cea54.png",
+        "used_by_classes": [
+            "Scout"
+        ]
+    },
+    {
+        "_id": 169,
+        "name": "Golden Wrench",
+        "stock": false,
+        "item_name": "#TF_Unique_Golden_Wrench",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/gold_wrench.1fb743f82bdf985d7b92df70199cc6cf59864684.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/gold_wrench_large.cdfc684c4ccc81a8541cf9fee8464fa8f7c70575.png",
+        "used_by_classes": [
+            "Engineer"
+        ]
+    },
+    {
+        "_id": 171,
+        "name": "The Tribalman's Shiv",
+        "stock": false,
+        "item_name": "#TF_Unique_TribalmanKukri",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_wood_machete.9764dac8c02440387d598898d882009b8cfe8141.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_wood_machete_large.5e9c47ddb287025d7400e32e72819fdb8c2a248e.png",
+        "used_by_classes": [
+            "Sniper"
+        ]
+    },
+    {
+        "_id": 172,
+        "name": "The Scotsman's Skullcutter",
+        "stock": false,
+        "item_name": "#TF_Unique_BattleAxe",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_battleaxe.d6fc2f636ae2889c174e2aed116f56fce368854f.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_battleaxe_large.5957c99f919eaf73f4f4ab6f313ee1bf8f7207ec.png",
+        "used_by_classes": [
+            "Demoman"
+        ]
+    },
+    {
+        "_id": 173,
+        "name": "The Vita-Saw",
+        "stock": false,
+        "item_name": "#TF_Unique_BattleSaw",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_uberneedle.4bb7c61c374589caabf00102178060cf78c9712b.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_uberneedle_large.78c1c49f9b3aebf4d61c1b862ea7da2c0a229097.png",
+        "used_by_classes": [
+            "Medic"
+        ]
+    },
+    {
+        "_id": 190,
+        "name": "Bat",
+        "stock": true,
+        "item_name": "#TF_Weapon_Bat",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_bat.50e76c8094493ae96cf10d8df676a93cd13516fc.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_bat_large.d036be2350e477ddb30576b41b83a6667c02b08b.png",
+        "used_by_classes": [
+            "Scout"
+        ]
+    },
+    {
+        "_id": 191,
+        "name": "Bottle",
+        "stock": true,
+        "item_name": "#TF_Weapon_Bottle",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/w_bottle.c3a6b7a98ccf6cd5cec84e377a8dcbed8394cdb2.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/w_bottle_large.44f57cd6e9e8c9782b3510870eb3066d19f81428.png",
+        "used_by_classes": [
+            "Demoman"
+        ]
+    },
+    {
+        "_id": 192,
+        "name": "Fire Axe",
+        "stock": true,
+        "item_name": "#TF_Weapon_FireAxe",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_fireaxe_pyro.f43835423ab6a5bc277329ec57c84a2d28e4a790.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_fireaxe_pyro_large.be78801ed8df7dcd14eb89e0def2724080120519.png",
+        "used_by_classes": [
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 193,
+        "name": "Kukri",
+        "stock": true,
+        "item_name": "#TF_Weapon_Club",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/w_machete.8dd45ef4de71c685bd57a034205399adf15249c4.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/w_machete_large.ab9015480c5b4cdfa2a86577758df4eb0c6f560d.png",
+        "used_by_classes": [
+            "Sniper"
+        ]
+    },
+    {
+        "_id": 194,
+        "name": "Knife",
+        "stock": true,
+        "item_name": "#TF_Weapon_Knife",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/w_knife.035a611b3f12c162ebc8857beb120fd07382c1d4.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/w_knife_large.22ba9afe5d2266d3d9af0f7dcf99d67d588cb895.png",
+        "used_by_classes": [
+            "Spy"
+        ]
+    },
+    {
+        "_id": 195,
+        "name": "Fists",
+        "stock": true,
+        "item_name": "#TF_Weapon_Fists",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/v_fist_heavy.b3430ff6a4bd7f5e8c89ad5804fe42390cf6a563.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/v_fist_heavy_large.8a1e3c4c1c80ec5288b13873b265e863c20b1387.png",
+        "used_by_classes": [
+            "Heavy"
+        ]
+    },
+    {
+        "_id": 196,
+        "name": "Shovel",
+        "stock": true,
+        "item_name": "#TF_Weapon_Shovel",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/w_shovel.af4732f0c4d144abfaab15f4caddb975b9055f55.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/w_shovel_large.e77641eed3c318d8749976679b1e520a1d01a072.png",
+        "used_by_classes": [
+            "Soldier"
+        ]
+    },
+    {
+        "_id": 197,
+        "name": "Wrench",
+        "stock": true,
+        "item_name": "#TF_Weapon_Wrench",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/w_wrench.c28ea76829f31aa00e65c524aa66c3486f5e6753.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/w_wrench_large.07e3fb9b450b873341106920222f087f2dfc7d16.png",
+        "used_by_classes": [
+            "Engineer"
+        ]
+    },
+    {
+        "_id": 198,
+        "name": "Bonesaw",
+        "stock": true,
+        "item_name": "#TF_Weapon_Bonesaw",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_bonesaw.6a7b7e2fee4933e2b5d3cf496f0b9e236265f9bf.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_bonesaw_large.aefad61757076f6268be4d15a4a349dfe71ba48a.png",
+        "used_by_classes": [
+            "Medic"
+        ]
+    },
+    {
+        "_id": 199,
+        "name": "Shotgun",
+        "stock": true,
+        "item_name": "#TF_Weapon_Shotgun",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/w_shotgun.781e0a03e8536215731d276a911c5753e42901d4.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/w_shotgun_large.9d8d23d241e3e1cc543154f2d7f43a850da25e02.png",
+        "used_by_classes": [
+            "Soldier",
+            "Heavy",
+            "Pyro",
+            "Engineer"
+        ],
+        "per_class_loadout_slots": {
+            "Soldier": "secondary",
+            "Heavy": "secondary",
+            "Pyro": "secondary",
+            "Engineer": "primary"
+        }
+    },
+    {
+        "_id": 200,
+        "name": "Scattergun",
+        "stock": true,
+        "item_name": "#TF_Weapon_Scattergun",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_scattergun.2e6a24f7733c70a7d688626c78c9116950a1e684.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_scattergun_large.510a91810888053a646b8889a0ed65024887dfed.png",
+        "used_by_classes": [
+            "Scout"
+        ]
+    },
+    {
+        "_id": 201,
+        "name": "Sniper Rifle",
+        "stock": true,
+        "item_name": "#TF_Weapon_SniperRifle",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/w_sniperrifle.af3c429316a18fddf96dd6af03ab0c220d3cfe09.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/w_sniperrifle_large.32f175b26906edb5e44d8520b5feafac65ca97c9.png",
+        "used_by_classes": [
+            "Sniper"
+        ]
+    },
+    {
+        "_id": 202,
+        "name": "Minigun",
+        "stock": true,
+        "item_name": "#TF_Weapon_Minigun",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/w_minigun.92362e2a8d60b5dd050c0e85e911ee1499a7b559.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/w_minigun_large.8d94ccc2c7ea7d375d0398171e573871fc8d2563.png",
+        "used_by_classes": [
+            "Heavy"
+        ]
+    },
+    {
+        "_id": 203,
+        "name": "SMG",
+        "stock": true,
+        "item_name": "#TF_Weapon_SMG",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/w_smg.a3610eb2082b665e0e924f1da14ed3429d789641.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/w_smg_large.60bdf2356f145300879d891dc3f993b57b817607.png",
+        "used_by_classes": [
+            "Sniper"
+        ]
+    },
+    {
+        "_id": 204,
+        "name": "Syringe Gun",
+        "stock": true,
+        "item_name": "#TF_Weapon_SyringeGun",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/w_syringegun.fcd97cf1e4a13de950a94842e3bc0d500b0efe05.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/w_syringegun_large.e8795f1c2121374bfdd7389674daf3ab0bd84018.png",
+        "used_by_classes": [
+            "Medic"
+        ]
+    },
+    {
+        "_id": 205,
+        "name": "Rocket Launcher",
+        "stock": true,
+        "item_name": "#TF_Weapon_RocketLauncher",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/w_rocketlauncher.0d0d3821f600a5065d5fd95dadd5ce56a8b0f802.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/w_rocketlauncher_large.376e56473114d28a687759b568bbfb03cac12823.png",
+        "used_by_classes": [
+            "Soldier"
+        ]
+    },
+    {
+        "_id": 206,
+        "name": "Grenade Launcher",
+        "stock": true,
+        "item_name": "#TF_Weapon_GrenadeLauncher",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/w_grenadelauncher.a430fe11337c5f14f68126a1d3d48fe4a67273af.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/w_grenadelauncher_large.1e6e606c6a76392bb98a6a03481ceca496250277.png",
+        "used_by_classes": [
+            "Demoman"
+        ]
+    },
+    {
+        "_id": 207,
+        "name": "Stickybomb Launcher",
+        "stock": true,
+        "item_name": "#TF_Weapon_PipebombLauncher",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/w_stickybomb_launcher.fec586622a8883019ef1acf2c3eb98a3a3b61bbc.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/w_stickybomb_launcher_large.ae44aadc5703600fa2c55bf774e665fca82bb063.png",
+        "used_by_classes": [
+            "Demoman"
+        ]
+    },
+    {
+        "_id": 208,
+        "name": "Flame Thrower",
+        "stock": true,
+        "item_name": "#TF_Weapon_FlameThrower",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_flamethrower.d344f780c361cba3138ec8c887b419917c9ef2b6.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_flamethrower_large.8e40da0e6d0cd29cf61714512207c90972c10a5f.png",
+        "used_by_classes": [
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 209,
+        "name": "Pistol",
+        "stock": true,
+        "item_name": "#TF_Weapon_Pistol",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_pistol.711237b0fb5861ce3151058a11f430109205d3ba.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_pistol_large.7d17878ac86e6ca15c5217f361cdf89f6afba301.png",
+        "used_by_classes": [
+            "Scout",
+            "Engineer"
+        ]
+    },
+    {
+        "_id": 210,
+        "name": "Revolver",
+        "stock": true,
+        "item_name": "#TF_Weapon_Revolver",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/w_revolver.9b4a43c8ce5797a08d0dfb5d9d5bfb1b90928008.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/w_revolver_large.86226aa2ce07b33864b848add4a4e4f4771ffc18.png",
+        "used_by_classes": [
+            "Spy"
+        ]
+    },
+    {
+        "_id": 211,
+        "name": "Medigun",
+        "stock": true,
+        "item_name": "#TF_Weapon_Medigun",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_medigun.b2bcbd173ce0d73db1f14766b882e1e7288b54bb.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_medigun_large.e399cdaa4595e303b044e5b5bbe23dca48d8b9d1.png",
+        "used_by_classes": [
+            "Medic"
+        ]
+    },
+    {
+        "_id": 214,
+        "name": "The Powerjack",
+        "stock": false,
+        "item_name": "#TF_ThePowerjack",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_powerjack.35b48cbb0c32bdfeff66c5c1be39ec6f4251ce29.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_powerjack_large.283c33ec19ae8da05d1a8fa3e1fe4f97668068a8.png",
+        "used_by_classes": [
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 215,
+        "name": "The Degreaser",
+        "stock": false,
+        "item_name": "#TF_TheDegreaser",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_degreaser.0a934206b32be241915edb1919937c4c9dfa2440.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_degreaser_large.275364c9c33d7c25bb4de321c2d6f43a0f5d8885.png",
+        "used_by_classes": [
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 220,
+        "name": "The Shortstop",
+        "stock": false,
+        "item_name": "#TF_TheShortstop",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_shortstop.c6f907b747ead370925ec367a56f369b26e2a103.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_shortstop_large.b276337c498980fa5c46d06ecf800d3344051e80.png",
+        "used_by_classes": [
+            "Scout"
+        ]
+    },
+    {
+        "_id": 221,
+        "name": "The Holy Mackerel",
+        "stock": false,
+        "item_name": "#TF_TheHolyMackerel",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_holymackerel.90c0c6f716e2a30b9d0b83258224fe4ecee76a1c.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_holymackerel_large.ab183cac65573ee7603054a2c38793057c153f02.png",
+        "used_by_classes": [
+            "Scout"
+        ]
+    },
+    {
+        "_id": 222,
+        "name": "Mad Milk",
+        "stock": false,
+        "item_name": "#TF_MadMilk",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_madmilk.85925f9a128b68d42cde2d404bb814208de6a12d.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_madmilk_large.5942e7dc6d4ef65771a297c58d5bee8f98669149.png",
+        "used_by_classes": [
+            "Scout"
+        ]
+    },
+    {
+        "_id": 224,
+        "name": "L'Etranger",
+        "stock": false,
+        "item_name": "#TF_LEtranger",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_letranger.a694739399535b2039d7387a4a8e3fd381d2f5e9.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_letranger_large.a3f9e60a5425fd18a531c16985a9d5d390860873.png",
+        "used_by_classes": [
+            "Spy"
+        ]
+    },
+    {
+        "_id": 225,
+        "name": "Your Eternal Reward",
+        "stock": false,
+        "item_name": "#TF_EternalReward",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_eternal_reward.719a96986781f5cb0f2d501a036541b3f9414c53.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_eternal_reward_large.28426fb3a9b9c4ccd2a057e9a396721976966155.png",
+        "used_by_classes": [
+            "Spy"
+        ]
+    },
+    {
+        "_id": 226,
+        "name": "The Battalion's Backup",
+        "stock": false,
+        "item_name": "#TF_TheBattalionsBackup",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_battalion_buffpack.3ef7697e7b798e7629c8b6b2d5493f7064899151.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_battalion_buffpack_large.e81b7651b4fdc372bdb3d1484ed2042e0382f700.png",
+        "used_by_classes": [
+            "Soldier"
+        ]
+    },
+    {
+        "_id": 228,
+        "name": "The Black Box",
+        "stock": false,
+        "item_name": "#TF_TheBlackBox",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_blackbox.073b328b6c73b6e9c34145d53e74d2e13d5edeb6.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_blackbox_large.efd6e9ef0baf3a3b651eb619ba0dc896b559d218.png",
+        "used_by_classes": [
+            "Soldier"
+        ]
+    },
+    {
+        "_id": 230,
+        "name": "The Sydney Sleeper",
+        "stock": false,
+        "item_name": "#TF_SydneySleeper",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_sydney_sleeper.8f50307bf65848ff5bbb4cf6657e268fcf753486.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_sydney_sleeper_large.07c131b86ebf8123e7b59c5dec15a0b25b48881c.png",
+        "used_by_classes": [
+            "Sniper"
+        ]
+    },
+    {
+        "_id": 231,
+        "name": "Darwin's Danger Shield",
+        "stock": false,
+        "item_name": "#TF_DarwinsDangerShield",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/croc_shield.337d89568f60d23782f8fea046ddaf2157d3f2d4.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/croc_shield_large.26e8a84c41999801faedfecd18e7f264bd4c739c.png",
+        "used_by_classes": [
+            "Sniper"
+        ]
+    },
+    {
+        "_id": 232,
+        "name": "The Bushwacka",
+        "stock": false,
+        "item_name": "#TF_TheBushwacka",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_croc_knife.592b085305174ccd195fc1a9f53f1a255b867fef.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_croc_knife_large.c8a75ccb3b9eb5b82ad2ebea049e7a6348182260.png",
+        "used_by_classes": [
+            "Sniper"
+        ]
+    },
+    {
+        "_id": 237,
+        "name": "Rocket Jumper",
+        "stock": false,
+        "item_name": "#TF_Weapon_RocketLauncher_Jump",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_rocketjumper.ffc4f77c5b1590c4423ff555ba7a11dbd4bb0e49.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_rocketjumper_large.45a2c947f6e986bf28a03838334465c119e45e70.png",
+        "used_by_classes": [
+            "Soldier"
+        ]
+    },
+    {
+        "_id": 239,
+        "name": "Gloves of Running Urgently",
+        "stock": false,
+        "item_name": "#TF_Unique_Gloves_of_Running_Urgently",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_boxing_gloves_urgency.50e3f044185eae99c283e45d20e03ae563223810.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_boxing_gloves_urgency_large.927ab852e9e217172143f2d1f578cded1f3fa0ce.png",
+        "used_by_classes": [
+            "Heavy"
+        ]
+    },
+    {
+        "_id": 264,
+        "name": "Frying Pan",
+        "stock": false,
+        "item_name": "#TF_Unique_FryingPan",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/all_pan.16dc18d950facd227349be67f47ea556df2cc47a.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/all_pan_large.87ba5265c73df72f3b3eee5fb0221e32232ef765.png",
+        "used_by_classes": [
+            "Scout",
+            "Sniper",
+            "Soldier",
+            "Demoman",
+            "Medic",
+            "Heavy",
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 265,
+        "name": "Stickybomb Jumper",
+        "stock": false,
+        "item_name": "#TF_Weapon_StickyBomb_Jump",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_sticky_jumper.380d8d8ffd47c2512a78568c11dcc240e01a2a09.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_sticky_jumper_large.1aee49b4be834f9de80db49dbc74328e84f2e0ee.png",
+        "used_by_classes": [
+            "Demoman"
+        ]
+    },
+    {
+        "_id": 266,
+        "name": "The Horseless Headless Horseman's Headtaker",
+        "stock": false,
+        "item_name": "#TF_HalloweenBoss_Axe",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_headtaker.d55e7b3a0e3ef98372b479d45083a4d10a663edf.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_headtaker_large.997b58b9b44f97831ca9dd1a3ea7d1cdfb33f101.png",
+        "used_by_classes": [
+            "Demoman"
+        ]
+    },
+    {
+        "_id": 298,
+        "name": "Iron Curtain",
+        "stock": false,
+        "item_name": "#TF_Iron_Curtain",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_iron_curtain.269ee7449128190e5c95ff083d947bc041295f75.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_iron_curtain_large.62cd6b6b891dfc44c9b43908079a08f48d187f08.png",
+        "used_by_classes": [
+            "Heavy"
+        ]
+    },
+    {
+        "_id": 304,
+        "name": "The Amputator",
+        "stock": false,
+        "item_name": "#TF_Amputator",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_amputator.b87ff9653efad223cc2df308788c62c301f115aa.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_amputator_large.b76f565619ccad9c0d12fa238dd2338359852847.png",
+        "used_by_classes": [
+            "Medic"
+        ]
+    },
+    {
+        "_id": 305,
+        "name": "The Crusader's Crossbow",
+        "stock": false,
+        "item_name": "#TF_CrusadersCrossbow",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_crusaders_crossbow.594f9b5bc758ce75289904d62f052bfd760f21d4.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_crusaders_crossbow_large.bd903340977e422a31a03d02abbdf872b7bea18f.png",
+        "used_by_classes": [
+            "Medic"
+        ]
+    },
+    {
+        "_id": 307,
+        "name": "The Ullapool Caber",
+        "stock": false,
+        "item_name": "#TF_UllapoolCaber",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_caber.2d51e5d213398672527771b1fb88e337442ad695.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_caber_large.322b2fedccd14c1e78d1ba248327747d98a41ddc.png",
+        "used_by_classes": [
+            "Demoman"
+        ]
+    },
+    {
+        "_id": 308,
+        "name": "The Loch-n-Load",
+        "stock": false,
+        "item_name": "#TF_LochNLoad",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_lochnload.034589c6ed4af675ac5faa7983820c800b600751.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_lochnload_large.909f050a5d279bf22beeb55062998a68b122b54e.png",
+        "used_by_classes": [
+            "Demoman"
+        ]
+    },
+    {
+        "_id": 310,
+        "name": "Warrior's Spirit",
+        "stock": false,
+        "item_name": "#TF_WarriorsSpirit",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_bear_claw.62dab8359a004e21dd9415f152d77915a9832f1b.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_bear_claw_large.96bb56e6d28072b3048570191844fd4e7d176238.png",
+        "used_by_classes": [
+            "Heavy"
+        ]
+    },
+    {
+        "_id": 311,
+        "name": "The Buffalo Steak Sandvich",
+        "stock": false,
+        "item_name": "#TF_BuffaloSteak",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_buffalo_steak.3decf9d9796ddc4732eb6f32b8e4b00423659675.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_buffalo_steak_large.9bc2abb3f87d694d5291546a9a9ef8670a94b060.png",
+        "used_by_classes": [
+            "Heavy"
+        ]
+    },
+    {
+        "_id": 312,
+        "name": "The Brass Beast",
+        "stock": false,
+        "item_name": "#TF_GatlingGun",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_gatling_gun.d2216915fedf9c0141470eaab6b7c9881a52082d.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_gatling_gun_large.3a9d917888bebc2d5ec166ae5f87ee54128e318e.png",
+        "used_by_classes": [
+            "Heavy"
+        ]
+    },
+    {
+        "_id": 317,
+        "name": "The Candy Cane",
+        "stock": false,
+        "item_name": "#TF_CandyCane",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_candy_cane.607846a782eb204ae5ccd744b4c8c580de58419d.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_candy_cane_large.72d0f7e09e4b4eff729bf82d0e8539fba99594de.png",
+        "used_by_classes": [
+            "Scout"
+        ]
+    },
+    {
+        "_id": 325,
+        "name": "The Boston Basher",
+        "stock": false,
+        "item_name": "#TF_BostonBasher",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_boston_basher.53f3407d8b530ee8ae546c78779d0870a1b7b09a.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_boston_basher_large.396cdb4f8459b05fdbfbcdfdb95293ca601dd689.png",
+        "used_by_classes": [
+            "Scout"
+        ]
+    },
+    {
+        "_id": 326,
+        "name": "The Back Scratcher",
+        "stock": false,
+        "item_name": "#TF_BackScratcher",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_back_scratcher.fc9e48743da9b430cb40c50ad63a48089a2845bc.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_back_scratcher_large.b48cd610d76370a8da4cf9b4fc3d6900c4d7aeaf.png",
+        "used_by_classes": [
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 327,
+        "name": "The Claidheamohmor",
+        "stock": false,
+        "item_name": "#TF_Claidheamohmor",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_claidheamohmor.5c916732d63ec77d2b6d9556673d4bef89dc8f0c.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_claidheamohmor_large.37a1512f284b219379fa7e9110720d650dcba1c2.png",
+        "used_by_classes": [
+            "Demoman"
+        ]
+    },
+    {
+        "_id": 329,
+        "name": "The Jag",
+        "stock": false,
+        "item_name": "#TF_Jag",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_jag.383184f964b7793b6d08f542ba665c2a8a3bab50.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_jag_large.fa68941f7f9a87dbbd630cb9cc2012a269189471.png",
+        "used_by_classes": [
+            "Engineer"
+        ]
+    },
+    {
+        "_id": 331,
+        "name": "Fists of Steel",
+        "stock": false,
+        "item_name": "#TF_FistsOfSteel",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_fists_of_steel.98d8a1c2efc78f3f63c3e6b90c32448c32df5d61.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_fists_of_steel_large.f74457582244ea5c7f07299229d1aaf0f9a986d0.png",
+        "used_by_classes": [
+            "Heavy"
+        ]
+    },
+    {
+        "_id": 348,
+        "name": "Sharpened Volcano Fragment",
+        "stock": false,
+        "item_name": "#TF_Unique_RiftFireAxe",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_rift_fire_axe.981d063b10494f4335cbc6ee72ab25c96a49e53d.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_rift_fire_axe_large.b3b2ea03956d469401e5e455f697533ff3c7f471.png",
+        "used_by_classes": [
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 349,
+        "name": "Sun-on-a-Stick",
+        "stock": false,
+        "item_name": "#TF_Unique_RiftFireMace",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_rift_fire_mace.8d82b8776b1d1b3f781be8ee12a79c8ea8c3e99b.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_rift_fire_mace_large.cbb557ee125b7c4e90586028089918174ac699fc.png",
+        "used_by_classes": [
+            "Scout"
+        ]
+    },
+    {
+        "_id": 351,
+        "name": "The Detonator",
+        "stock": false,
+        "item_name": "#TF_Weapon_Flaregun_Detonator",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_detonator.b7b8211d4b145c6ee7cd5517b01a392339e61eac.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_detonator_large.a7ba1d9574636da5544806870a52399bff309bf0.png",
+        "used_by_classes": [
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 354,
+        "name": "The Concheror",
+        "stock": false,
+        "item_name": "#TF_SoldierSashimono",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_shogun_warpack.5845f7dd54b35d2037c12e3ada92d79e8a757bba.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_shogun_warpack_large.17b1a1824634137532cd16d39d8d1a491e3a5cd9.png",
+        "used_by_classes": [
+            "Soldier"
+        ]
+    },
+    {
+        "_id": 355,
+        "name": "The Fan O'War",
+        "stock": false,
+        "item_name": "#TF_Gunbai",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_shogun_warfan.4cfb3a8d914109f941136f9aa84d4f93d3d6b9d7.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_shogun_warfan_large.74f2693f1a368e5984c736362788311842abe2ed.png",
+        "used_by_classes": [
+            "Scout"
+        ]
+    },
+    {
+        "_id": 356,
+        "name": "Conniver's Kunai",
+        "stock": false,
+        "item_name": "#TF_Kunai",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_shogun_kunai.634f857ec8a13d88126ed107d855a8b8c0753a62.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_shogun_kunai_large.d6a12927de8e9617e860ffda9b29d4f8e0d3dc0c.png",
+        "used_by_classes": [
+            "Spy"
+        ]
+    },
+    {
+        "_id": 357,
+        "name": "The Half-Zatoichi",
+        "stock": false,
+        "item_name": "#TF_SoldierKatana",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_shogun_katana.22499e36a4d5644db9e5f8653d003f1519839d6b.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_shogun_katana_large.5a21d1534720ad701a10efeef21bae12170900d8.png",
+        "used_by_classes": [
+            "Soldier",
+            "Demoman"
+        ]
+    },
+    {
+        "_id": 401,
+        "name": "The Shahanshah",
+        "stock": false,
+        "item_name": "#TF_Shahanshah",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_scimitar.10651e0c4e9ae2d49129f74967a1002372d0eafe.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_scimitar_large.5b599ead15ef72a3b861eee913fe0900c0c1d296.png",
+        "used_by_classes": [
+            "Sniper"
+        ]
+    },
+    {
+        "_id": 402,
+        "name": "The Bazaar Bargain",
+        "stock": false,
+        "item_name": "#TF_BazaarBargain",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_bazaar_sniper.9a36f5240f92bfa32ae87e474d4310442b7cb52d.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_bazaar_sniper_large.1decf01772a36c75f6f93f4314ebb5add9815cfd.png",
+        "used_by_classes": [
+            "Sniper"
+        ]
+    },
+    {
+        "_id": 404,
+        "name": "The Persian Persuader",
+        "stock": false,
+        "item_name": "#TF_PersianPersuader",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_demo_sultan_sword.e14eafeb8583215a20d48e52d46d1bf1ff885ff2.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_demo_sultan_sword_large.6e182b8c4da88b3f5661e610624c1d4812504151.png",
+        "used_by_classes": [
+            "Demoman"
+        ]
+    },
+    {
+        "_id": 405,
+        "name": "Ali Baba's Wee Booties",
+        "stock": false,
+        "item_name": "#TF_Ali_Babas_Wee_Booties",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/demo_booties.6c832304c83b2efe0f4ee87060ae26277f919d1f.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/demo_booties_large.cd953f100b696e385a3eb6636a2fa09ab5558530.png",
+        "used_by_classes": [
+            "Demoman"
+        ]
+    },
+    {
+        "_id": 406,
+        "name": "The Splendid Screen",
+        "stock": false,
+        "item_name": "#TF_SplendidScreen",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_persian_shield.41c35ede45c975b46eea3700cfe4e21f0dd19c18.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_persian_shield_large.f3f4c2befdfa4ef74ad659ec19c2221a6d16844e.png",
+        "used_by_classes": [
+            "Demoman"
+        ]
+    },
+    {
+        "_id": 411,
+        "name": "The Quick-Fix",
+        "stock": false,
+        "item_name": "#TF_Unique_MediGun_QuickFix",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_proto_medigun.821bc2c35d7deb7b3b33c19f844699a52d931d89.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_proto_medigun_large.cbc3865a8667693df1aaf371c2add9a2944856b2.png",
+        "used_by_classes": [
+            "Medic"
+        ]
+    },
+    {
+        "_id": 412,
+        "name": "The Overdose",
+        "stock": false,
+        "item_name": "#TF_Overdose",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_proto_syringegun.571a8d98707d58dd7da50800b47ca22722b4b31d.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_proto_syringegun_large.0e649f595f615702ef2cfa2355d13fb9900bc1e2.png",
+        "used_by_classes": [
+            "Medic"
+        ]
+    },
+    {
+        "_id": 413,
+        "name": "The Solemn Vow",
+        "stock": false,
+        "item_name": "#TF_SolemnVow",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_hippocrates_bust.86e585dc41d853f7c8d9fe2c3622a8fb2fc294be.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_hippocrates_bust_large.6a66def396b2494b6e3ac7f674b4ae0e910c1b94.png",
+        "used_by_classes": [
+            "Medic"
+        ]
+    },
+    {
+        "_id": 414,
+        "name": "The Liberty Launcher",
+        "stock": false,
+        "item_name": "#TF_LibertyLauncher",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_liberty_launcher.f7601fb0d4266c8cb769ccfb17b2c2b67719d209.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_liberty_launcher_large.7d9390fb5e92a69545e1e955e56387cd78fcc147.png",
+        "used_by_classes": [
+            "Soldier"
+        ]
+    },
+    {
+        "_id": 415,
+        "name": "The Reserve Shooter",
+        "stock": false,
+        "item_name": "#TF_ReserveShooter",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_reserve_shooter.f559ff8aee8f247ae2e8eab3e8bff2df1122ccb0.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_reserve_shooter_large.79a1bc716c055ab96a55f98ced98d2956484734d.png",
+        "used_by_classes": [
+            "Soldier",
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 416,
+        "name": "The Market Gardener",
+        "stock": false,
+        "item_name": "#TF_MarketGardener",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_market_gardener.55830678fd0579a0b2cdc14f2dd3048862369fa4.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_market_gardener_large.631b4452bfc5c5ee7a34ab526047843eb56fd9b2.png",
+        "used_by_classes": [
+            "Soldier"
+        ]
+    },
+    {
+        "_id": 423,
+        "name": "Saxxy",
+        "stock": false,
+        "item_name": "#TF_Saxxy",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_saxxy.579212f3c5d4bc1f55b4598949be76d0ab99cf01.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_saxxy_large.cdc453789de7e320005c182fbce37f8a2027dc02.png"
+    },
+    {
+        "_id": 424,
+        "name": "Tomislav",
+        "stock": false,
+        "item_name": "#TF_Tomislav",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_tomislav.63b27a0a5c67654fd012428ea06236be9ace35e9.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_tomislav_large.9db3d8cf4390b64b62ce3720dd0bd580f85f2111.png",
+        "used_by_classes": [
+            "Heavy"
+        ]
+    },
+    {
+        "_id": 425,
+        "name": "The Family Business",
+        "stock": false,
+        "item_name": "#TF_RussianRiot",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_russian_riot.dc3602ef56c25c1220a729e443e126d1b0d4a8c5.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_russian_riot_large.39fa533ddafc31aec24cf4e13335e00b601dda35.png",
+        "used_by_classes": [
+            "Heavy"
+        ]
+    },
+    {
+        "_id": 426,
+        "name": "The Eviction Notice",
+        "stock": false,
+        "item_name": "#TF_EvictionNotice",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_eviction_notice.3de95591131707bdd40cf5cd0124821a301ad5be.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_eviction_notice_large.6bd64db86f1049e3231250de0b27e9e91bccdd8b.png",
+        "used_by_classes": [
+            "Heavy"
+        ]
+    },
+    {
+        "_id": 433,
+        "name": "Fishcake",
+        "stock": false,
+        "item_name": "#TF_SpaceChem_Fishcake",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_fishcake.6a4642fc533a7d5182048ffc6d07b49e56a974a7.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_fishcake_large.424620d726b8576de87af79d4ffa07c610726b6e.png",
+        "used_by_classes": [
+            "Heavy"
+        ]
+    },
+    {
+        "_id": 441,
+        "name": "The Cow Mangler 5000",
+        "stock": false,
+        "item_name": "#TF_CowMangler",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_drg_cowmangler.9f7cb6b838cc1ad5cd92053006a93d5eb9a2b6d6.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_drg_cowmangler_large.64f9731b3f9e89bc78fc5b017a0f54d4830c8daa.png",
+        "used_by_classes": [
+            "Soldier"
+        ]
+    },
+    {
+        "_id": 442,
+        "name": "The Righteous Bison",
+        "stock": false,
+        "item_name": "#TF_RighteousBison",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_drg_righteousbison.93880a8209d0bed100176949685d47dfeb9751f4.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_drg_righteousbison_large.122b23f9cc8654764f65aa6a0b526dbb2a909eda.png",
+        "used_by_classes": [
+            "Soldier"
+        ]
+    },
+    {
+        "_id": 444,
+        "name": "The Mantreads",
+        "stock": false,
+        "item_name": "#TF_Mantreads",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/mantreads.bd9bc1bf1729459f437b0d3194673361d8be8753.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/mantreads_large.92f3dfdaf0e2b419dd4ddd5fcc0d1ac5385c9c4c.png",
+        "used_by_classes": [
+            "Soldier"
+        ]
+    },
+    {
+        "_id": 447,
+        "name": "The Disciplinary Action",
+        "stock": false,
+        "item_name": "#TF_DisciplinaryAction",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_riding_crop.07fcada5a25690d9bb484b97adccb785430b8520.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_riding_crop_large.03dfe1166988fd5c1be67e3474790108670eb0bf.png",
+        "used_by_classes": [
+            "Soldier"
+        ]
+    },
+    {
+        "_id": 448,
+        "name": "The Soda Popper",
+        "stock": false,
+        "item_name": "#TF_SodaPopper",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_soda_popper.fe0f0ee9e1386cfd38012e7057df051edabcff2b.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_soda_popper_large.88417663097d30ec34ccef283c8b227fe1e00488.png",
+        "used_by_classes": [
+            "Scout"
+        ]
+    },
+    {
+        "_id": 449,
+        "name": "The Winger",
+        "stock": false,
+        "item_name": "#TF_Winger",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_winger_pistol.b34ea2f91dbc75a68ee6fa848379e70be1981811.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_winger_pistol_large.e1abf98ec79d39825f27bb42d737586da7a626c2.png",
+        "used_by_classes": [
+            "Scout"
+        ]
+    },
+    {
+        "_id": 450,
+        "name": "The Atomizer",
+        "stock": false,
+        "item_name": "#TF_Atomizer",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_bonk_bat.22694d39bda6ac3b46cdc1569b07993be9e2f50f.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_bonk_bat_large.83d7ed285cee7fc5e263459f574bdf015dffdce1.png",
+        "used_by_classes": [
+            "Scout"
+        ]
+    },
+    {
+        "_id": 452,
+        "name": "Three-Rune Blade",
+        "stock": false,
+        "item_name": "#TF_ScoutSword",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_scout_sword.dac68a049c6cce2d6d8d969189852c2a6e3cf6a5.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_scout_sword_large.86f7b86caef2bfca4afae9fcec57c171d42219ea.png",
+        "used_by_classes": [
+            "Scout"
+        ]
+    },
+    {
+        "_id": 457,
+        "name": "The Postal Pummeler",
+        "stock": false,
+        "item_name": "#TF_Mailbox",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_mailbox.cec691a37614e62f374fcdcca0331d7c967bec1d.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_mailbox_large.fc96a1b643f1c32f2f1cd0f7d2158b0ffb3df14c.png",
+        "used_by_classes": [
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 460,
+        "name": "The Enforcer",
+        "stock": false,
+        "item_name": "#TF_Enforcer",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_snub_nose.f5cd852b6263caee6ba687e34cf07d9f4a1b3244.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_snub_nose_large.83af8535c9a830594b462bb41a7a0162f01f5d6c.png",
+        "used_by_classes": [
+            "Spy"
+        ]
+    },
+    {
+        "_id": 461,
+        "name": "The Big Earner",
+        "stock": false,
+        "item_name": "#TF_BigEarner",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_switchblade.7834f1d1fd07a7d244daac559c78e3b1ab369f94.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_switchblade_large.21c1ca667c0b8b36fd24fe846a6ebdf2d3dda0c6.png",
+        "used_by_classes": [
+            "Spy"
+        ]
+    },
+    {
+        "_id": 466,
+        "name": "The Maul",
+        "stock": false,
+        "item_name": "#TF_RFAHammer",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_rfa_hammer.2c7c8c92a5815840f41c532728a927bca7ee2cc8.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_rfa_hammer_large.632fc093c1f05a98196e8b3e0861b2d4d992f4d8.png",
+        "used_by_classes": [
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 474,
+        "name": "The Conscientious Objector",
+        "stock": false,
+        "item_name": "#TF_ConscientiousObjector",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_picket.154051b579a1f9930968b832f55db42476ffb555.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_picket_large.89561cef94d21473bd92cdff495fec47fddd5e23.png",
+        "used_by_classes": [
+            "Scout",
+            "Sniper",
+            "Soldier",
+            "Demoman",
+            "Medic",
+            "Heavy",
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 482,
+        "name": "Nessie's Nine Iron",
+        "stock": false,
+        "item_name": "#TF_NineIron",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_golfclub.c72bb374b623ae194f6139cb70964d0b98092105.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_golfclub_large.517086dd493d09554ae78c56a85b3663158f725e.png",
+        "used_by_classes": [
+            "Demoman"
+        ]
+    },
+    {
+        "_id": 513,
+        "name": "The Original",
+        "stock": false,
+        "item_name": "#TF_TheOriginal",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_bet_rocketlauncher.82e06d0cc0c9eb80179358ebe0d85d483018de4d.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_bet_rocketlauncher_large.7cf0085701479563e2e7521e59ad0229d5cab08d.png",
+        "used_by_classes": [
+            "Soldier"
+        ]
+    },
+    {
+        "_id": 525,
+        "name": "The Diamondback",
+        "stock": false,
+        "item_name": "#TF_DEX_Revolver",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_dex_revolver.51b64a63217049ee6bffe13a01430ccd0ead86a3.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_dex_revolver_large.39aa96e3d7d368980397b9ec5786c4d2e58f2a24.png",
+        "used_by_classes": [
+            "Spy"
+        ]
+    },
+    {
+        "_id": 526,
+        "name": "The Machina",
+        "stock": false,
+        "item_name": "#TF_DEX_Rifle",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_dex_sniperrifle.81e976fb35c261054d3537c3d74d7559a4dac397.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_dex_sniperrifle_large.ec102bbbf78422341cdfdf6cdfe370fdbed2e39d.png",
+        "used_by_classes": [
+            "Sniper"
+        ]
+    },
+    {
+        "_id": 527,
+        "name": "The Widowmaker",
+        "stock": false,
+        "item_name": "#TF_DEX_Shotgun",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_dex_shotgun.8b8c34a5edd683ff07ff67722975c4960591fce3.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_dex_shotgun_large.5f6d888c89577a9cccbfce22982c206b8e9e04e9.png",
+        "used_by_classes": [
+            "Engineer"
+        ]
+    },
+    {
+        "_id": 528,
+        "name": "The Short Circuit",
+        "stock": false,
+        "item_name": "#TF_DEX_Pistol",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_dex_arm.e35f4aa351fd9f154ff53dbdfe6afe04eace9c19.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_dex_arm_large.10aefdf90657ab9b0f18e7d4660b8e66418d046e.png",
+        "used_by_classes": [
+            "Engineer"
+        ]
+    },
+    {
+        "_id": 572,
+        "name": "Unarmed Combat",
+        "stock": false,
+        "item_name": "#TF_UnarmedCombat",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_unarmed_combat.ef75de13db058514fdc6deac43540107e77dc042.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_unarmed_combat_large.76744528bcb20d5a392468c5a571dfd7f7ba9101.png",
+        "used_by_classes": [
+            "Scout"
+        ]
+    },
+    {
+        "_id": 574,
+        "name": "The Wanga Prick",
+        "stock": false,
+        "item_name": "#TF_VoodooPin",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_voodoo_pin.d54b67a4e9dc90c3d7f3ba45d37d08dcc844ddcb.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_voodoo_pin_large.1511ad8ce8065194db965360aec22fd8f5d7d122.png",
+        "used_by_classes": [
+            "Spy"
+        ]
+    },
+    {
+        "_id": 587,
+        "name": "Apoco-Fists",
+        "stock": false,
+        "item_name": "#TF_Apocofists",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_sr3_punch.6aea417db34bc0d90bf9f684f4df06351b155fc2.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_sr3_punch_large.e8f16b00f06ae9da2a3ed80fcf7997d4f7007505.png",
+        "used_by_classes": [
+            "Heavy"
+        ]
+    },
+    {
+        "_id": 588,
+        "name": "The Pomson 6000",
+        "stock": false,
+        "item_name": "#TF_Pomson",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_drg_pomson.6eb2a1ce67329978255c4b69f61c1cce147f4713.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_drg_pomson_large.e9d8115f9e7a48023937aedd34c42acc8474347f.png",
+        "used_by_classes": [
+            "Engineer"
+        ]
+    },
+    {
+        "_id": 589,
+        "name": "The Eureka Effect",
+        "stock": false,
+        "item_name": "#TF_Wrenchmotron",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_drg_wrenchmotron.6c1166bd836c466a628e45711adc27044e914ab7.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_drg_wrenchmotron_large.7acbe7255795a6af97de14b8d2b027c05a544ab0.png",
+        "used_by_classes": [
+            "Engineer"
+        ]
+    },
+    {
+        "_id": 593,
+        "name": "The Third Degree",
+        "stock": false,
+        "item_name": "#TF_ThirdDegree",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_drg_thirddegree.2bf241ce0cfa81221023c1191d29e8c9903e5d51.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_drg_thirddegree_large.5005739054f8b4a1c9199fd5d140fe71f6267be1.png",
+        "used_by_classes": [
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 594,
+        "name": "The Phlogistinator",
+        "stock": false,
+        "item_name": "#TF_Phlogistinator",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_drg_phlogistinator.acfeb920599d6354b30b23427cfc42eefb66c026.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_drg_phlogistinator_large.ef52735bb26d48b0e2db41c6a0e096b977b97786.png",
+        "used_by_classes": [
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 595,
+        "name": "The Manmelter",
+        "stock": false,
+        "item_name": "#TF_ManMelter",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_drg_manmelter.639f17875217e2f990be13fd77685bb15c8f64d6.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_drg_manmelter_large.bf3643ccd5cf1636005b994c6275f7fd389904ef.png",
+        "used_by_classes": [
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 608,
+        "name": "The Bootlegger",
+        "stock": false,
+        "item_name": "#TF_Bootlegger",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/pegleg.34dbc9b41b2e607eb36dc7c169cad2372bf484a4.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/pegleg_large.b56f2617aab30dd3d4d570e097f5e549d923abfd.png",
+        "used_by_classes": [
+            "Demoman"
+        ]
+    },
+    {
+        "_id": 609,
+        "name": "The Scottish Handshake",
+        "stock": false,
+        "item_name": "#TF_ScottishHandshake",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_scotland_shard.82af0a3d2ca3ab0bc402c212fb9df087c5be8fcf.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_scotland_shard_large.e4d75f45c5c905d40845107eb3940484ae391a9a.png",
+        "used_by_classes": [
+            "Demoman"
+        ]
+    },
+    {
+        "_id": 638,
+        "name": "The Sharp Dresser",
+        "stock": false,
+        "item_name": "#TF_SharpDresser",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_acr_hookblade.abd9805a5f9aeb9961ec7de24754f90273433977.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_acr_hookblade_large.aff65762b82413a1629efc817e547c502cfdcd62.png",
+        "used_by_classes": [
+            "Spy"
+        ]
+    },
+    {
+        "_id": 642,
+        "name": "The Cozy Camper",
+        "stock": false,
+        "item_name": "#TF_CozyCamper",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/xms_sniper_commandobackpack.925aa14c761949fd6e421f63ad5dede823488bcc.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/xms_sniper_commandobackpack_large.d819ef4e2b8b1acff348071b61ea1c5f3d952e30.png",
+        "used_by_classes": [
+            "Sniper"
+        ]
+    },
+    {
+        "_id": 648,
+        "name": "The Wrap Assassin",
+        "stock": false,
+        "item_name": "#TF_BallBuster",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_xms_giftwrap.8da59394e8fc21c46ce8cd21954b065834223ec3.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_xms_giftwrap_large.223e00bd66fd2560d685b9c8c06c991065124d2c.png",
+        "used_by_classes": [
+            "Scout"
+        ]
+    },
+    {
+        "_id": 649,
+        "name": "The Spy-cicle",
+        "stock": false,
+        "item_name": "#TF_SpyCicle",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_xms_cold_shoulder.f6ee66be21ba4dc8fc21ca67599b7dc7ec9430f2.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_xms_cold_shoulder_large.be70b769f448b81af22b8317b5932fa531844242.png",
+        "used_by_classes": [
+            "Spy"
+        ]
+    },
+    {
+        "_id": 656,
+        "name": "The Holiday Punch",
+        "stock": false,
+        "item_name": "#TF_MasculineMittens",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_xms_gloves.b7ce846795bdf0a9e1fc8b6d6c1db2aed3218c71.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_xms_gloves_large.334f8ebaf68d2964b1a769774fa5e303e770b189.png",
+        "used_by_classes": [
+            "Heavy"
+        ]
+    },
+    {
+        "_id": 727,
+        "name": "The Black Rose",
+        "stock": false,
+        "item_name": "#TF_BlackRose",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_ava_roseknife_v.ad7e4c85843a63744ba7c0d5a261c788d9ef70d1.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_ava_roseknife_v_large.e9718d477b9d984d4cd79046edd207129caf7d75.png",
+        "used_by_classes": [
+            "Spy"
+        ]
+    },
+    {
+        "_id": 730,
+        "name": "The Beggar's Bazooka",
+        "stock": false,
+        "item_name": "#TF_DS_DumpsterDevice",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_dumpster_device.1d9e4552717df20315fb0c51b309e723ebed6b5c.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_dumpster_device_large.a6a4b5e8a4a958effabe86c099103f9b537122bb.png",
+        "used_by_classes": [
+            "Soldier"
+        ]
+    },
+    {
+        "_id": 739,
+        "name": "The Lollichop",
+        "stock": false,
+        "item_name": "#TF_Lollichop",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_lollichop.ddd832ebe55a67c1c696a7b26caab67665f16c04.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_lollichop_large.22e1c0661c769d52e23ced3de9af6a8b6d308d65.png",
+        "used_by_classes": [
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 740,
+        "name": "The Scorch Shot",
+        "stock": false,
+        "item_name": "#TF_ScorchShot",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_scorch_shot.c144880cb6c24da3e1b1d46f00f090027ae3235a.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_scorch_shot_large.6ba7fc597494b3099c260c0b07541e6750264d6f.png",
+        "used_by_classes": [
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 741,
+        "name": "The Rainblower",
+        "stock": false,
+        "item_name": "#TF_Rainblower",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_rainblower.601f9c7bd8c7bf64d9de92948591b9e56983f00f.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_rainblower_large.45ae6312015032bf086ca890f1931ad6bd543f7c.png",
+        "used_by_classes": [
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 751,
+        "name": "The Cleaner's Carbine",
+        "stock": false,
+        "item_name": "#TF_Pro_SMG",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_pro_smg.e8fb686b034494de7408f1e21e470c8118c5800a.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_pro_smg_large.cf27a8de10647020d70a00366c74feac893d40fd.png",
+        "used_by_classes": [
+            "Sniper"
+        ]
+    },
+    {
+        "_id": 752,
+        "name": "The Hitman's Heatmaker",
+        "stock": false,
+        "item_name": "#TF_Pro_SniperRifle",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_pro_rifle.ef6d4fedad6c63ff17eaf25c46450f18912f9d91.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_pro_rifle_large.b079ee10bbfb9bcf97146583accf718f580859a6.png",
+        "used_by_classes": [
+            "Sniper"
+        ]
+    },
+    {
+        "_id": 772,
+        "name": "Baby Face's Blaster",
+        "stock": false,
+        "item_name": "#TF_Weapon_PEP_Scattergun",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_pep_scattergun.35d7c9f4e372e6cb1963a5e998457f9a570476b5.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_pep_scattergun_large.183c1dbf96f6e302ee99801689adcf2da97d6510.png",
+        "used_by_classes": [
+            "Scout"
+        ]
+    },
+    {
+        "_id": 773,
+        "name": "Pretty Boy's Pocket Pistol",
+        "stock": false,
+        "item_name": "#TF_Weapon_PEP_Pistol",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_pep_pistol.ffc78ab45595a017c468f8ede486524ff12eeb15.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_pep_pistol_large.92c9c1dfa81c57a9abb39412dcd1c62e71e9e437.png",
+        "used_by_classes": [
+            "Scout"
+        ]
+    },
+    {
+        "_id": 775,
+        "name": "The Escape Plan",
+        "stock": false,
+        "item_name": "#TF_Unique_Pickaxe_EscapePlan",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_pickaxe.eda38e0c44a0a13cfbc8089d699e369dde3b65f6.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_pickaxe_large.171d50919e25db24ceba7422c2545f911db8a0dc.png",
+        "used_by_classes": [
+            "Soldier"
+        ]
+    },
+    {
+        "_id": 811,
+        "name": "The Huo-Long Heater",
+        "stock": false,
+        "item_name": "#TF_SD_Minigun",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_canton.623566518e6a11106333e480c0ff82e583facf33.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_canton_large.a4def79082175880a1086fe6a6aa93f53f268732.png",
+        "used_by_classes": [
+            "Heavy"
+        ]
+    },
+    {
+        "_id": 812,
+        "name": "The Flying Guillotine",
+        "stock": false,
+        "item_name": "#TF_SD_Cleaver",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_sd_cleaver.77d12fc60cae04ca10794a0cf6695138b5411db1.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_sd_cleaver_large.3f9f5f6a0a8cb044fe3990d8d85c543aa2508ca6.png",
+        "used_by_classes": [
+            "Scout"
+        ]
+    },
+    {
+        "_id": 813,
+        "name": "The Neon Annihilator",
+        "stock": false,
+        "item_name": "#TF_SD_Sign",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_sd_neonsign.dda1158a80419da433862e963d798df95391e952.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_sd_neonsign_large.e6f832656f205c8dfde889e80a866e7c23f8c829.png",
+        "used_by_classes": [
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 851,
+        "name": "The AWPer Hand",
+        "stock": false,
+        "item_name": "#TF_CSGO_AWP",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_csgo_awp.44054e3d0e231493fc286ce6f365b14e4b1b3260.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_csgo_awp_large.b919da3927fd45150c8f9b6def1a4537eec6aeb6.png",
+        "used_by_classes": [
+            "Sniper"
+        ]
+    },
+    {
+        "_id": 863,
+        "name": "The Robo-Sandvich",
+        "stock": false,
+        "item_name": "#TF_Robot_Sandvich",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_robo_sandwich.48ad50f10fba430032c9b082e0e1de0dd010749a.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_robo_sandwich_large.59010cd99eb39c5415283d7a3075f95e1cd448a4.png",
+        "used_by_classes": [
+            "Heavy"
+        ]
+    },
+    {
+        "_id": 880,
+        "name": "The Freedom Staff",
+        "stock": false,
+        "item_name": "#TF_TW_Staff",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_tw_eagle.9c524fcf77c208ef13e842cb8293e1bdcf74dbff.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_tw_eagle_large.dd3d265807002e0085a03769cde95982d47011db.png",
+        "used_by_classes": [
+            "Scout",
+            "Sniper",
+            "Soldier",
+            "Demoman",
+            "Medic",
+            "Heavy",
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 939,
+        "name": "The Bat Outta Hell",
+        "stock": false,
+        "item_name": "#TF_BatOuttaHell",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_skullbat.b286e6e4d48f0f242c6e14036097cb2cabfef65e.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_skullbat_large.ca55bfc92569b623df3722c00a9166027f9883ca.png",
+        "used_by_classes": [
+            "Scout",
+            "Sniper",
+            "Soldier",
+            "Demoman",
+            "Medic",
+            "Heavy",
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 954,
+        "name": "Memory Maker",
+        "stock": false,
+        "item_name": "#TF_Memory_Maker",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_8mm_camera.85ea79ab02255b21d03b526818c1865f7299ac0a.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_8mm_camera_large.a17fc7816aa17c9e8696e062bcb6ff2d7d2761e4.png",
+        "used_by_classes": [
+            "Scout",
+            "Sniper",
+            "Soldier",
+            "Demoman",
+            "Medic",
+            "Heavy",
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 996,
+        "name": "The Loose Cannon",
+        "stock": false,
+        "item_name": "#TF_Weapon_Cannon",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_demo_cannon.6144ab9bc895fec47ebc83fc380edab34ff40483.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_demo_cannon_large.bb9eb8b5dcbabc16c91b266949f1c48a64ff9cbd.png",
+        "used_by_classes": [
+            "Demoman"
+        ]
+    },
+    {
+        "_id": 997,
+        "name": "The Rescue Ranger",
+        "stock": false,
+        "item_name": "#TF_Weapon_Shotgun_Building_Rescue",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_tele_shotgun.bac312deda5a20c75c2cab3bf74a17add7ac76bc.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_tele_shotgun_large.23fba5189364b61216316903e42caf026be23c00.png",
+        "used_by_classes": [
+            "Engineer"
+        ]
+    },
+    {
+        "_id": 998,
+        "name": "The Vaccinator",
+        "stock": false,
+        "item_name": "#TF_Unique_MediGun_Resist",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_medigun_defense.7d9c16bbc1b1e7121ba5d850edd8635daa7819e0.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_medigun_defense_large.22f9555ec39f7a0699387ef93b8a68447360e9d1.png",
+        "used_by_classes": [
+            "Medic"
+        ]
+    },
+    {
+        "_id": 1013,
+        "name": "The Ham Shank",
+        "stock": false,
+        "item_name": "#TF_HamShank",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_ham.85f61f42e7c76e21e38f5134633522c9c5ab1b3b.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_ham_large.899b6441af4f5e5689fe30f771c267e7c28d9779.png",
+        "used_by_classes": [
+            "Scout",
+            "Sniper",
+            "Soldier",
+            "Demoman",
+            "Medic",
+            "Heavy",
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 1071,
+        "name": "Gold Frying Pan",
+        "stock": false,
+        "item_name": "#TF_Gold_FryingPan",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_frying_pan_gold.babf22c60b24a75403a2e1e4a02b48eca4145633.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_frying_pan_gold_large.c72c2eec8133619f29f878102f9c36893412ffea.png"
+    },
+    {
+        "_id": 1092,
+        "name": "The Fortified Compound",
+        "stock": false,
+        "item_name": "#TF_FortifiedCompound",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_bow_thief.92137c75e9b97b0f59d6c64471dd60df267b48a9.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_bow_thief_large.2a80f21166569c958ec9d852a77d068fbe6fd635.png",
+        "used_by_classes": [
+            "Sniper"
+        ]
+    },
+    {
+        "_id": 1098,
+        "name": "The Classic",
+        "stock": false,
+        "item_name": "#TF_ClassicSniperRifle",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_tfc_sniperrifle.62b5bff6a6df45db6cbacf32b37cf4e6d7315845.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_tfc_sniperrifle_large.404979e1e9b5891343ade5f65814ccd591d625ab.png",
+        "used_by_classes": [
+            "Sniper"
+        ]
+    },
+    {
+        "_id": 1099,
+        "name": "The Tide Turner",
+        "stock": false,
+        "item_name": "#TF_TideTurner",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_wheel_shield.467c4fb55b8ea4bb22249faac376ecf3d2dfdbd5.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_wheel_shield_large.382b17b7cff6627183f367d38186e7aa772b53f7.png",
+        "used_by_classes": [
+            "Demoman"
+        ]
+    },
+    {
+        "_id": 1100,
+        "name": "The Bread Bite",
+        "stock": false,
+        "item_name": "#TF_Weapon_BreadBite",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_breadmonster_gloves.b3d395092ef1ef1ba40cb2154ff03038ba6a19f6.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_breadmonster_gloves_large.1bd65ba8452e1b41bc98eeadd5d43abc79eb9c9f.png",
+        "used_by_classes": [
+            "Heavy"
+        ]
+    },
+    {
+        "_id": 1101,
+        "name": "The B.A.S.E. Jumper",
+        "stock": false,
+        "item_name": "#TF_Weapon_BaseJumper",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_paratrooper_pack.f08d697ebf569f54901551d476d14a82563be4cc.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_paratrooper_pack_large.15d1e733efd8cc3288c1f0ab75b95734cfff4b5d.png",
+        "used_by_classes": [
+            "Soldier",
+            "Demoman"
+        ],
+        "per_class_loadout_slots": {
+            "Soldier": "secondary",
+            "Demoman": "primary"
+        }
+    },
+    {
+        "_id": 1103,
+        "name": "The Back Scatter",
+        "stock": false,
+        "item_name": "#TF_Weapon_BackScatter",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_scatterdrum.0bb192ed9234ba57142670870e0e1a66e88d9fdd.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_scatterdrum_large.5775148f31cee393d9d3441c67e8d59148df6f52.png",
+        "used_by_classes": [
+            "Scout"
+        ]
+    },
+    {
+        "_id": 1104,
+        "name": "The Air Strike",
+        "stock": false,
+        "item_name": "#TF_Weapon_AirStrike",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_atom_launcher.a73ffe082514aa2910d68aac19a68edc022d3a41.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_atom_launcher_large.8a7ef863271a4e999b1f15b43b4dbb297c7cbf34.png",
+        "used_by_classes": [
+            "Soldier"
+        ]
+    },
+    {
+        "_id": 1105,
+        "name": "The Self-Aware Beauty Mark",
+        "stock": false,
+        "item_name": "#TF_Weapon_SelfAwareBeautyMark",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_breadmonster.716db771491628f0e40fd2454ff1e207e590c61f.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_breadmonster_large.4befbdd6279c2e8d597a54a87ecce3f4a31d6913.png",
+        "used_by_classes": [
+            "Sniper"
+        ]
+    },
+    {
+        "_id": 1121,
+        "name": "Mutated Milk",
+        "stock": false,
+        "item_name": "#TF_Weapon_MutatedMilk",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_breadmonster_milk.51b87f84ec34c04a8107b86075593c0a12e92868.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_breadmonster_milk_large.e12d936be71e135d08174fc7d8a0ff81707058cb.png",
+        "used_by_classes": [
+            "Scout"
+        ]
+    },
+    {
+        "_id": 1123,
+        "name": "Necro Smasher",
+        "stock": false,
+        "item_name": "#TF_Weapon_Necro_Smasher",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_carnival_mallet.82603bca2b9aa129bb7dd0c29ad9bccdb93c12f8.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_carnival_mallet_large.02200bc9ef41a46179e35486567953f75a3a4dbf.png",
+        "used_by_classes": [
+            "Scout",
+            "Sniper",
+            "Soldier",
+            "Demoman",
+            "Medic",
+            "Heavy",
+            "Pyro",
+            "Engineer"
+        ]
+    },
+    {
+        "_id": 1127,
+        "name": "The Crossing Guard",
+        "stock": false,
+        "item_name": "#TF_CrossingGuard",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_crossing_guard.1be97c17e441c9fef69874fc7997c297baee991a.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_crossing_guard_large.c45462e313a1690e466055c65aaa13c90ddf0601.png",
+        "used_by_classes": [
+            "Scout",
+            "Sniper",
+            "Soldier",
+            "Demoman",
+            "Medic",
+            "Heavy",
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 1150,
+        "name": "The Quickiebomb Launcher",
+        "stock": false,
+        "item_name": "#TF_Weapon_Sticky_Quickie",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_kingmaker_sticky.cb72ea702d34d40854998333bf6ca10a2edf737b.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_kingmaker_sticky_large.71c4382c8982c1d65d9f1381d781e66a287c2a3a.png",
+        "used_by_classes": [
+            "Demoman"
+        ]
+    },
+    {
+        "_id": 1151,
+        "name": "The Iron Bomber",
+        "stock": false,
+        "item_name": "#TF_Weapon_Iron_bomber",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_quadball.6e7a2b500843bab7a2d6ae67f9909e07d27cd269.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_quadball_large.f6458d3b74c482cfe712cd5e464b8cafbf001811.png",
+        "used_by_classes": [
+            "Demoman"
+        ]
+    },
+    {
+        "_id": 1153,
+        "name": "The Panic Attack",
+        "stock": false,
+        "item_name": "#TF_Weapon_PanicAttack",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_trenchgun.1c4f0cd6df6024b792e8884c898ff485ad6fc029.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_trenchgun_large.5dce9611333d597436db1f6ab50c7f66bf6e646d.png",
+        "used_by_classes": [
+            "Soldier",
+            "Heavy",
+            "Pyro",
+            "Engineer"
+        ],
+        "per_class_loadout_slots": {
+            "Soldier": "secondary",
+            "Heavy": "secondary",
+            "Pyro": "secondary",
+            "Engineer": "primary"
+        }
+    },
+    {
+        "_id": 1178,
+        "name": "The Dragon's Fury",
+        "stock": false,
+        "item_name": "#TF_Weapon_DragonsFury",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_flameball.e9fae4f27b30ed41fda65066482104328407f4e4.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_flameball_large.7da0865a5a5311c50d084fd3eec68feb81631716.png",
+        "used_by_classes": [
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 1179,
+        "name": "The Thermal Thruster",
+        "stock": false,
+        "item_name": "#TF_ThermalThruster",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_rocketpack.e1bfad024192f0753c38a67a7b393c9ef384284d.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_rocketpack_large.21d33e06c94f07ba6ce09082cd37a8ebbf9ab6cc.png",
+        "used_by_classes": [
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 1180,
+        "name": "The Gas Passer",
+        "stock": false,
+        "item_name": "#TF_GasPasser",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_gascan.90b042b9a9902027e58467ee0d74332fa403f552.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_gascan_large.f124cd668dd8ab8148d6e958dcc9f5d7948f9f8a.png",
+        "used_by_classes": [
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 1181,
+        "name": "The Hot Hand",
+        "stock": false,
+        "item_name": "#TF_Weapon_HotHand",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/w_slapping_glove.23aeaac942a704a0c900d1ae06ab51f9613aa343.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/w_slapping_glove_large.c0aa8e96acf12540ed7c9a6aa12264b0567b01f3.png",
+        "used_by_classes": [
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 1190,
+        "name": "The Second Banana",
+        "stock": false,
+        "item_name": "#TF_Unique_Lunchbox_Banana",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_banana.803d2bd737b3083dfdf945857aaefb59148c7e1c.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_banana_large.e29aedd403a9f6b6ef172f49ca032a4103ea0ea8.png",
+        "used_by_classes": [
+            "Heavy"
+        ]
+    },
+    {
+        "_id": 30474,
+        "name": "The Nostromo Napalmer",
+        "stock": false,
+        "item_name": "#TF_NostromoNapalmer",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_ai_flamethrower.4ccf3a9a7f6230afde8bb0525dee28ee2371f739.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_ai_flamethrower_large.1bd85e06fc105b68306fb7b19f19b45b0ef0f926.png",
+        "used_by_classes": [
+            "Pyro"
+        ]
+    },
+    {
+        "_id": 30665,
+        "name": "Shooting Star",
+        "stock": false,
+        "item_name": "#TF_invasion_sniperrifle",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_invasion_sniperrifle.6f318b9c6e9e71e89180742aa7514a61a3fbdb34.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_invasion_sniperrifle_large.ace17bec3ea9febffc2f2e979864d401fee814f9.png",
+        "used_by_classes": [
+            "Sniper"
+        ]
+    },
+    {
+        "_id": 30666,
+        "name": "The C.A.P.P.E.R",
+        "stock": false,
+        "item_name": "#TF_invasion_pistol",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_invasion_pistol.772bbaaaff2b8cc82eacf844372477c8de599d22.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_invasion_pistol_large.1ea1f9f98743b5a1b5bfad7c3c7f7669951893ca.png",
+        "used_by_classes": [
+            "Scout",
+            "Engineer"
+        ]
+    },
+    {
+        "_id": 30667,
+        "name": "Batsaber",
+        "stock": false,
+        "item_name": "#TF_invasion_bat",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_invasion_bat.777ea2014cd9abe07e9d7b03d1ddb8eaebc0e189.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_invasion_bat_large.c6cb255904f7c5f0f902b5b4f3f4c0aa62129dc7.png",
+        "used_by_classes": [
+            "Scout"
+        ]
+    },
+    {
+        "_id": 30668,
+        "name": "The Giger Counter",
+        "stock": false,
+        "item_name": "#TF_invasion_wrangler",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_invasion_wrangler.8dd45ea760e66d79f8c7d6652470bcffc278677a.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_invasion_wrangler_large.52113c61fcc1ae78dae87a98a79e92a57d2177a4.png",
+        "used_by_classes": [
+            "Engineer"
+        ]
+    },
+    {
+        "_id": 30758,
+        "name": "Prinny Machete",
+        "stock": false,
+        "item_name": "#TF_prinny_machete",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_prinny_knife.048a26c26b16fd9fcb5d3f234ce3e236e0b9023a.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_prinny_knife_large.a0e59931ab1dcdc9ce97504de7cd7519301d7df4.png"
+    }
+]

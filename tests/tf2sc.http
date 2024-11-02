@@ -1,0 +1,37 @@
+@endpoint = http://localhost:8000/tf2sc/loadouts
+
+# 199 - valid primary for engie
+
+###
+# @name postALoadout
+POST {{endpoint}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "merc": "Engineer",
+    "primary": 1,
+    "secondary": 140,
+    "melee": 30758,
+    "name": "prinny engie"
+}
+
+###
+# @name getALlLoadouts
+GET {{endpoint}} HTTP/1.1
+Content-Type: application/json
+
+###
+# @name updateALoadout
+PUT {{endpoint}}/43aaf4e0-4986-4c6b-884c-e8c59d650c9b HTTP/1.1
+Content-Type: application/json
+
+{
+    "merc": "Engineer",
+    "primary": 1,
+    "name": "updated prinny engie"
+}
+
+###
+# @name deleteALoadout
+DELETE {{endpoint}}/43aaf4e0-4986-4c6b-884c-e8c59d650c9b HTTP/1.1
+Content-Type: application/json

@@ -1,0 +1,6 @@
+- better error handling for when the error is a raised exception
+- return `{ created: loadout }` instead of just `loadout`
+- same for updated deleted etc
+- catch axum extraction errors 
+- catch serde deserialization errors
+- additional validation 
