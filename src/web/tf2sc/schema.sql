@@ -48,7 +48,8 @@ CREATE TABLE IF NOT EXISTS loadouts (
     "primary" INT NOT NULL REFERENCES weapons(id),
     secondary INT NOT NULL REFERENCES weapons(id),
     melee INT NOT NULL REFERENCES weapons(id),
-    name TEXT NOT NULL
+    name TEXT NOT NULL,
+    playstyle TEXT NOT NULL
 );
 
 
