@@ -1,16 +1,89 @@
 use std::collections::HashMap;
-use serde::Deserialize;
-use serde::Serialize;
-use sqlx::types::Uuid;
-use sqlx::FromRow;
-use sqlx::Type;
-use sqlx;
-use strum_macros::Display;
-use strum_macros::EnumString;
+
+use serde::{Deserialize, Serialize};
+use sqlx::{prelude::{FromRow, Type}, types::Uuid};
+use strum_macros::{Display, EnumString};
 use itertools::Itertools;
 
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync + 'static>> {
+    let view_weapons_str = r###"
+    [{
+  "id": 190,
+  "name": "Bat",
+  "stock": true,
+  "item_name": "#TF_Weapon_Bat",
+  "item_slot": "melee",
+  "image_url": "http://media.steampowered.com/apps/440/icons/c_bat.50e76c8094493ae96cf10d8df676a93cd13516fc.png",
+  "image_url_large": "http://media.steampowered.com/apps/440/icons/c_bat_large.d036be2350e477ddb30576b41b83a6667c02b08b.png",
+  "merc": "Scout"
+}, {
+  "id": 199,
+  "name": "Shotgun",
+  "stock": true,
+  "item_name": "#TF_Weapon_Shotgun",
+  "item_slot": "secondary",
+  "image_url": "http://media.steampowered.com/apps/440/icons/w_shotgun.781e0a03e8536215731d276a911c5753e42901d4.png",
+  "image_url_large": "http://media.steampowered.com/apps/440/icons/w_shotgun_large.9d8d23d241e3e1cc543154f2d7f43a850da25e02.png",
+  "merc": "Soldier"
+}, {
+  "id": 199,
+  "name": "Shotgun",
+  "stock": true,
+  "item_name": "#TF_Weapon_Shotgun",
+  "item_slot": "secondary",
+  "image_url": "http://media.steampowered.com/apps/440/icons/w_shotgun.781e0a03e8536215731d276a911c5753e42901d4.png",
+  "image_url_large": "http://media.steampowered.com/apps/440/icons/w_shotgun_large.9d8d23d241e3e1cc543154f2d7f43a850da25e02.png",
+  "merc": "Heavy"
+}, {
+  "id": 199,
+  "name": "Shotgun",
+  "stock": true,
+  "item_name": "#TF_Weapon_Shotgun",
+  "item_slot": "secondary",
+  "image_url": "http://media.steampowered.com/apps/440/icons/w_shotgun.781e0a03e8536215731d276a911c5753e42901d4.png",
+  "image_url_large": "http://media.steampowered.com/apps/440/icons/w_shotgun_large.9d8d23d241e3e1cc543154f2d7f43a850da25e02.png",
+  "merc": "Pyro"
+}, {
+  "id": 199,
+  "name": "Shotgun",
+  "stock": true,
+  "item_name": "#TF_Weapon_Shotgun",
+  "item_slot": "primary",
+  "image_url": "http://media.steampowered.com/apps/440/icons/w_shotgun.781e0a03e8536215731d276a911c5753e42901d4.png",
+  "image_url_large": "http://media.steampowered.com/apps/440/icons/w_shotgun_large.9d8d23d241e3e1cc543154f2d7f43a850da25e02.png",
+  "merc": "Engineer"
+}, {
+  "id": 30758,
+  "name": "Prinny Machete",
+  "stock": false,
+  "item_name": "#TF_prinny_machete",
+  "item_slot": "melee",
+  "image_url": "http://media.steampowered.com/apps/440/icons/c_prinny_knife.048a26c26b16fd9fcb5d3f234ce3e236e0b9023a.png",
+  "image_url_large": "http://media.steampowered.com/apps/440/icons/c_prinny_knife_large.a0e59931ab1dcdc9ce97504de7cd7519301d7df4.png",
+  "merc": null
+}]
+    "###;
 
-#[derive(Debug, Clone, FromRow, Serialize)]
+    let weapons: Vec<WeaponFromView> = serde_json::from_str(&view_weapons_str)?;
+    dbg!(&weapons);
+    let ms = weapons.to_mongo_style();
+
+    dbg!(&ms);
+
+    let ms_json = serde_json::to_string(&ms)?;
+    println!("{}", ms_json);
+
+
+
+    Ok(())
+}
+
+
+
+
+
+#[derive(Debug, Clone, FromRow, Serialize, Deserialize)]
 pub struct WeaponFromView {
     id: i32,
     name: String,
@@ -23,7 +96,7 @@ pub struct WeaponFromView {
 }
 
 // TODO: use associated type
-pub trait MongoStyle {
+trait MongoStyle {
     type Output;
 
     fn to_mongo_style(self) -> Self::Output;
@@ -59,8 +132,9 @@ impl MongoStyle for Vec<WeaponFromView> {
     }
 }
 
+#[allow(dead_code)]
 #[derive(Debug, Clone, FromRow, Serialize)]
-pub struct MongoStyleWeapon {
+struct MongoStyleWeapon {
     #[serde(rename = "_id")]
     id: i32,
     name: String,
@@ -146,6 +220,8 @@ impl MongoStyleWeaponBuilder {
         self.put(weapon)
     }
 }
+
+
 
 #[derive(Type, Debug, Clone, Deserialize, Serialize)]
 #[serde(rename_all = "lowercase")]

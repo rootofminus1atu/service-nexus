@@ -29,3 +29,4 @@ tower-http = { version = "0.5", features = ["fs", "cors", "trace"] }
 dotenvy = "0.15.7"
 strum = "0.23"
 strum_macros = "0.23"
+itertools = "0.13.0"

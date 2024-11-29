@@ -1,37 +1,62 @@
-@endpoint = http://localhost:8000/tf2sc/loadouts
+@weapons = http://localhost:8000/tf2sc/weapons
+@loadouts = http://localhost:8000/tf2sc/loadouts
+
+
+### 
+GET {{weapons}}?merc=Engineer&slot=primary HTTP/1.1
+Content-Type: application/json
+
+### 
+GET {{weapons}} HTTP/1.1
+Content-Type: application/json
+
+
+
+
+
+
 
 # 199 - valid primary for engie
 
 ###
 # @name postALoadout
-POST {{endpoint}} HTTP/1.1
+POST {{loadouts}} HTTP/1.1
 Content-Type: application/json
 
 {
     "merc": "Engineer",
-    "primary": 1,
+    "primary": 199,
     "secondary": 140,
     "melee": 30758,
     "name": "prinny engie"
 }
 
 ###
+@loadoutId = {{postALoadout.response.body.id}}
+###
+
+###
 # @name getALlLoadouts
-GET {{endpoint}} HTTP/1.1
+GET {{loadouts}} HTTP/1.1
+Content-Type: application/json
+
+###
+# @name getLoadoutById
+GET {{loadouts}}/{{loadoutId}} HTTP/1.1
 Content-Type: application/json
 
 ###
 # @name updateALoadout
-PUT {{endpoint}}/43aaf4e0-4986-4c6b-884c-e8c59d650c9b HTTP/1.1
+PUT {{loadouts}}/{{loadoutId}} HTTP/1.1
 Content-Type: application/json
 
 {
     "merc": "Engineer",
-    "primary": 1,
+    "primary": 199,
     "name": "updated prinny engie"
 }
 
 ###
 # @name deleteALoadout
-DELETE {{endpoint}}/43aaf4e0-4986-4c6b-884c-e8c59d650c9b HTTP/1.1
+DELETE {{loadouts}}/{{loadoutId}} HTTP/1.1
 Content-Type: application/json

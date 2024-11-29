@@ -3,14 +3,15 @@ use serde::{Deserialize, Deserializer};
 use sqlx::{types::Uuid, PgPool};
 use std::str::FromStr;
 use serde::de;
-use super::model::{ItemSlot, Loadout, LoadoutForCreate, LoadoutForUpdate, Merc, WeaponFromView};
+use super::model::{ItemSlot, Loadout, LoadoutForCreate, LoadoutForUpdate, Merc, WeaponFromView, MongoStyle};
 
 #[derive(Deserialize)]
 pub struct MercSlotParams {
     merc: Option<Merc>,
-    item_slot: Option<ItemSlot>,
+    slot: Option<ItemSlot>,
 }
 
+// might use it in the future
 #[allow(unused)]
 fn case_insensitive_option_merc<'de, D>(deserializer: D) -> Result<Option<Merc>, D::Error>
 where
@@ -25,10 +26,10 @@ where
 pub async fn get_all_weapons(State(db): State<PgPool>, Query(q): Query<MercSlotParams>) -> Result<impl IntoResponse, super::Error> {
     let MercSlotParams { 
         merc, 
-        item_slot
+        slot
     }  = q;
 
-    let query = match (merc, item_slot) {
+    let query = match (merc, slot) {
         (None, None) => {
             sqlx::query_as::<_, WeaponFromView>("SELECT * FROM weapon_details")
         },
@@ -36,18 +37,19 @@ pub async fn get_all_weapons(State(db): State<PgPool>, Query(q): Query<MercSlotP
             sqlx::query_as::<_, WeaponFromView>("SELECT * FROM weapon_details WHERE merc = $1 OR merc IS NULL")
                 .bind(merc)
         },
-        (None, Some(item_slot)) => {
+        (None, Some(slot)) => {
             sqlx::query_as::<_, WeaponFromView>("SELECT * FROM weapon_details WHERE item_slot = $1")
-                .bind(item_slot)
+                .bind(slot)
         },
-        (Some(merc), Some(item_slot)) => {
+        (Some(merc), Some(slot)) => {
             sqlx::query_as::<_, WeaponFromView>("SELECT * FROM weapon_details WHERE (merc = $1 OR merc IS NULL) AND item_slot = $2")
                 .bind(merc)
-                .bind(item_slot)
+                .bind(slot)
         },
     };
 
     let weapons = query.fetch_all(&db).await?;
+    let weapons = weapons.to_mongo_style();
 
     Ok(Json(weapons))
 }
@@ -77,7 +79,7 @@ pub async fn get_loadout(Path(id): Path<String>, State(db): State<PgPool>) -> Re
     let id = id.parse::<Uuid>()
         .map_err(|_| super::Error::InvalidLoadoutId)?;
 
-    let loadout = sqlx::query_as::<_, Loadout>("SELECT FROM loadouts WHERE id = $1")
+    let loadout = sqlx::query_as::<_, Loadout>("SELECT * FROM loadouts WHERE id = $1")
         .bind(id)
         .fetch_optional(&db)
         .await?
@@ -138,7 +140,6 @@ pub async fn update_loadout(Path(id): Path<String>, State(db): State<PgPool>, Js
         .fetch_optional(&db)
         .await?
         .ok_or(super::Error::LoadoutNotFound { id })?;
-
 
     Ok(Json(updated_loadout))
 }

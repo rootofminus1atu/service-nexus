@@ -1,0 +1,62 @@
+[
+    {
+        "id": 198,
+        "name": "Bonesaw",
+        "stock": true,
+        "item_name": "#TF_Weapon_Bonesaw",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_bonesaw.6a7b7e2fee4933e2b5d3cf496f0b9e236265f9bf.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_bonesaw_large.aefad61757076f6268be4d15a4a349dfe71ba48a.png",
+        "merc": "Medic"
+    },
+    {
+        "id": 199,
+        "name": "Shotgun",
+        "stock": true,
+        "item_name": "#TF_Weapon_Shotgun",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/w_shotgun.781e0a03e8536215731d276a911c5753e42901d4.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/w_shotgun_large.9d8d23d241e3e1cc543154f2d7f43a850da25e02.png",
+        "merc": "Heavy"
+    },
+    {
+        "id": 199,
+        "name": "Shotgun",
+        "stock": true,
+        "item_name": "#TF_Weapon_Shotgun",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/w_shotgun.781e0a03e8536215731d276a911c5753e42901d4.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/w_shotgun_large.9d8d23d241e3e1cc543154f2d7f43a850da25e02.png",
+        "merc": "Engineer"
+    },
+    {
+        "id": 199,
+        "name": "Shotgun",
+        "stock": true,
+        "item_name": "#TF_Weapon_Shotgun",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/w_shotgun.781e0a03e8536215731d276a911c5753e42901d4.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/w_shotgun_large.9d8d23d241e3e1cc543154f2d7f43a850da25e02.png",
+        "merc": "Soldier"
+    },
+    {
+        "id": 199,
+        "name": "Shotgun",
+        "stock": true,
+        "item_name": "#TF_Weapon_Shotgun",
+        "item_slot": "secondary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/w_shotgun.781e0a03e8536215731d276a911c5753e42901d4.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/w_shotgun_large.9d8d23d241e3e1cc543154f2d7f43a850da25e02.png",
+        "merc": "Pyro"
+    },
+    {
+        "id": 30758,
+        "name": "Prinny Machete",
+        "stock": false,
+        "item_name": "#TF_prinny_machete",
+        "item_slot": "melee",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_prinny_knife.048a26c26b16fd9fcb5d3f234ce3e236e0b9023a.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_prinny_knife_large.a0e59931ab1dcdc9ce97504de7cd7519301d7df4.png",
+        "merc": null
+    }
+]
