@@ -8,6 +8,7 @@ use sqlx;
 use strum_macros::Display;
 use strum_macros::EnumString;
 use itertools::Itertools;
+use validator::Validate;
 
 
 #[derive(Debug, Clone, FromRow, Serialize)]
@@ -173,29 +174,36 @@ pub enum Merc {
 
 #[derive(Debug, Clone, FromRow, Deserialize, Serialize)]
 pub struct Loadout {
-    id: Uuid,
-    merc: Merc,
-    primary: i32,
-    secondary: i32,
-    melee: i32,
-    name: String
+    pub id: Uuid,
+    pub merc: Merc,
+    pub primary: i32,
+    pub secondary: i32,
+    pub melee: i32,
+    pub name: String,
+    pub playstyle: String
 }
 
-#[derive(Debug, Clone, Deserialize)]
+#[derive(Debug, Clone, Deserialize, Validate)]
 pub struct LoadoutForCreate {
     pub merc: Merc,
     pub primary: i32,
     pub secondary: i32,
     pub melee: i32,
-    pub name: String
+    #[validate(length(min = 3))]
+    pub name: String,
+    #[validate(length(min = 3))]
+    pub playstyle: String
 }
 
-#[derive(Debug, Clone, Deserialize)]
+#[derive(Debug, Clone, Deserialize, Validate)]
 pub struct LoadoutForUpdate {
     pub merc: Merc,
     pub primary: Option<i32>,
     pub secondary: Option<i32>,
     pub melee: Option<i32>,
-    pub name: Option<String>
+    #[validate(length(min = 3))]
+    pub name: Option<String>,
+    #[validate(length(min = 3))]
+    pub playstyle: Option<String>
 }
 

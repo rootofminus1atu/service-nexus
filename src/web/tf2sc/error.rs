@@ -18,7 +18,9 @@ pub enum Error {
     #[error("Invalid loadout id")]
     InvalidLoadoutId,
     #[error("Loadout with id {id} not found")]
-    LoadoutNotFound { id: Uuid }
+    LoadoutNotFound { id: Uuid },
+    #[error("Validation error: {0}")]
+    ValidationError(#[from] validator::ValidationErrors)
 }
 
 impl IntoResponse for Error {
@@ -31,7 +33,7 @@ impl IntoResponse for Error {
 
         let status_code = match &self {
             Self::WeaponNotFound { id: _ } | Self::LoadoutNotFound { id: _ } => StatusCode::NOT_FOUND,
-            Self::InvalidWeaponId | Self::InvalidLoadoutId => StatusCode::BAD_REQUEST,
+            Self::InvalidWeaponId | Self::InvalidLoadoutId | Self::ValidationError(_) => StatusCode::BAD_REQUEST,
             Self::NeonTf2scError(_) => StatusCode::INTERNAL_SERVER_ERROR
         };
         

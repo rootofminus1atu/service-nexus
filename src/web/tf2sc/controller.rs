@@ -3,6 +3,7 @@ use serde::{Deserialize, Deserializer};
 use sqlx::{types::Uuid, PgPool};
 use std::str::FromStr;
 use serde::de;
+use validator::{Validate, ValidationError};
 use super::model::{ItemSlot, Loadout, LoadoutForCreate, LoadoutForUpdate, Merc, WeaponFromView, MongoStyle};
 
 #[derive(Deserialize)]
@@ -89,12 +90,15 @@ pub async fn get_loadout(Path(id): Path<String>, State(db): State<PgPool>) -> Re
 }
 
 pub async fn create_loadout(State(db): State<PgPool>, Json(loadout): Json<LoadoutForCreate>) -> Result<impl IntoResponse, super::Error> {
-    let created = sqlx::query_as::<_, Loadout>("INSERT INTO loadouts (merc, \"primary\", secondary, melee, name) VALUES ($1, $2, $3, $4, $5) RETURNING *")
+    loadout.validate()?;
+    
+    let created = sqlx::query_as::<_, Loadout>("INSERT INTO loadouts (merc, \"primary\", secondary, melee, name, playstyle) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *")
         .bind(loadout.merc)
         .bind(loadout.primary)
         .bind(loadout.secondary)
         .bind(loadout.melee)
         .bind(loadout.name)
+        .bind(loadout.playstyle)
         .fetch_one(&db)
         .await?;
 
@@ -117,6 +121,8 @@ pub async fn delete_loadout(Path(id): Path<String>, State(db): State<PgPool>) ->
 pub async fn update_loadout(Path(id): Path<String>, State(db): State<PgPool>, Json(loadout): Json<LoadoutForUpdate>) -> Result<impl IntoResponse, super::Error> {
     let id = id.parse::<Uuid>()
         .map_err(|_| super::Error::InvalidLoadoutId)?;
+
+    loadout.validate()?;
     
     let query = r#"
         UPDATE loadouts
@@ -125,8 +131,9 @@ pub async fn update_loadout(Path(id): Path<String>, State(db): State<PgPool>, Js
             "primary" = COALESCE($2, "primary"),
             secondary = COALESCE($3, secondary),
             melee = COALESCE($4, melee),
-            name = COALESCE($5, name)
-        WHERE id = $6
+            name = COALESCE($5, name),
+            playstyle = COALESCE($6, playstyle)
+        WHERE id = $7
         RETURNING *
     "#;
 
@@ -136,6 +143,7 @@ pub async fn update_loadout(Path(id): Path<String>, State(db): State<PgPool>, Js
         .bind(loadout.secondary)
         .bind(loadout.melee)
         .bind(loadout.name)
+        .bind(loadout.playstyle)
         .bind(id)
         .fetch_optional(&db)
         .await?

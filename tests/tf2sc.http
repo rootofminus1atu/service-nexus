@@ -28,7 +28,8 @@ Content-Type: application/json
     "primary": 199,
     "secondary": 140,
     "melee": 30758,
-    "name": "prinny engie"
+    "name": "prinny engie",
+    "playstyle": "hit with machete"
 }
 
 ###
