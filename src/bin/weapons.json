@@ -1,5 +1,70 @@
 [
     {
+        "_id": 212,
+        "name": "Invis Watch",
+        "stock": true,
+        "item_name": "#TF_Weapon_Watch",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_spy_watch.bce181d4e32e773e89dd2a424b377a8fc2de9e6c.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_spy_watch_large.162b1377564cac5b11bc5d32d15f2afa4bb4a389.png",
+        "used_by_classes": [
+            "Spy"
+        ],
+        "per_class_loadout_slots": null
+    },
+    {
+        "_id": 947,
+        "name": "The Quackenbirdt",
+        "stock": false,
+        "item_name": "#TF_HM_Watch",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/v_hm_watch.4a5c72ce31c3b61c8b57d95b74e27087bd1562c9.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/v_hm_watch_large.b5bf2c07fb2882ca2ef739af07e8ce95c3a3e031.png",
+        "used_by_classes": [
+            "Spy"
+        ],
+        "per_class_loadout_slots": null
+    },
+    {
+        "_id": 59,
+        "name": "The Dead Ringer",
+        "stock": false,
+        "item_name": "#TF_Unique_Achievement_FeignWatch",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_pocket_watch.4bb1428288c15c31b18e7ed73676049befb33770.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_pocket_watch_large.4152a0038c97f105b0d262234c6f7afada9f055a.png",
+        "used_by_classes": [
+            "Spy"
+        ],
+        "per_class_loadout_slots": null
+    },
+    {
+        "_id": 297,
+        "name": "Enthusiast's Timepiece",
+        "stock": false,
+        "item_name": "#TF_TTG_Watch",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_ttg_watch.76004edf544398c5dc7aeab53b65523547091b7a.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_ttg_watch_large.fd82aaf51f2cceba0239380a31664e17953bc483.png",
+        "used_by_classes": [
+            "Spy"
+        ],
+        "per_class_loadout_slots": null
+    },
+    {
+        "_id": 60,
+        "name": "The Cloak and Dagger",
+        "stock": false,
+        "item_name": "#TF_Unique_Achievement_CloakWatch",
+        "item_slot": "primary",
+        "image_url": "http://media.steampowered.com/apps/440/icons/c_leather_watch.a982af29faf01d0173962c6496e9525f52d7d42c.png",
+        "image_url_large": "http://media.steampowered.com/apps/440/icons/c_leather_watch_large.ed4064cfc596e92a200a40481320f1d30d6807b0.png",
+        "used_by_classes": [
+            "Spy"
+        ],
+        "per_class_loadout_slots": null
+    },
+    {
         "_id": 35,
         "name": "The Kritzkrieg",
         "stock": false,

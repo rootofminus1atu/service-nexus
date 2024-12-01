@@ -94,6 +94,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                 })
         })
         .collect::<Vec<_>>();
+    dbg!(&_ubc);
 
     let _a: Vec<WeaponPerClassLoadoutSlot> = full_weapons.iter()
         .flat_map(|w| {
@@ -108,6 +109,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                 })
         })
         .collect::<Vec<_>>();
+    dbg!(&_a);
 
     let _res: Vec<Weapon> = full_weapons.into_iter().map(|w| Weapon {
             id: w.id,
@@ -119,11 +121,50 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             image_url_large: w.image_url_large
         })
         .collect::<Vec<_>>();
+    dbg!(&_res);
 
     panic!("STOP RIGHT THERE CRIMINAL SCUM, NOBODY RE-INSERTS WEAPONS ON MY WATCH");
 
     let _neon_db = PgPool::connect("nuh uh").await.unwrap();
     println!("connected to neon");
+
+
+
+    let ids: Vec<i32> = _res.iter().map(|w| w.id).collect();
+    let names: Vec<String> = _res.iter().map(|w| w.name.clone()).collect();
+    let stocks: Vec<bool> = _res.iter().map(|w| w.stock).collect();
+    let item_names: Vec<String> = _res.iter().map(|w| w.item_name.clone()).collect();
+    let item_slots: Vec<ItemSlot> = _res.iter().map(|w| w.item_slot.clone()).collect();
+    let image_urls: Vec<String> = _res.iter().map(|w| w.image_url.clone()).collect();
+    let image_url_larges: Vec<String> = _res.iter().map(|w| w.image_url_large.clone()).collect();
+
+    let sql = r#"
+        INSERT INTO weapons (id, name, stock, item_name, item_slot, image_url, image_url_large)
+        SELECT * FROM UNNEST(
+            $1::INT[],
+            $2::TEXT[],
+            $3::BOOL[],
+            $4::TEXT[],
+            $5::item_slot[],
+            $6::TEXT[],
+            $7::TEXT[]
+        )
+    "#;
+
+    sqlx::query(sql)
+    .bind(ids)
+    .bind(names)
+    .bind(stocks)
+    .bind(item_names)
+    .bind(item_slots)
+    .bind(image_urls)
+    .bind(image_url_larges)
+    .execute(&_neon_db)
+    .await?;
+
+    println!("hopefully");
+
+
 
 
     let weapon_ids: Vec<i32> = _ubc.iter().map(|w| w.weapon_id).collect();
@@ -165,41 +206,6 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         .await?;
 
     println!("per class loadout slots");
-
-
-    let ids: Vec<i32> = _res.iter().map(|w| w.id).collect();
-    let names: Vec<String> = _res.iter().map(|w| w.name.clone()).collect();
-    let stocks: Vec<bool> = _res.iter().map(|w| w.stock).collect();
-    let item_names: Vec<String> = _res.iter().map(|w| w.item_name.clone()).collect();
-    let item_slots: Vec<ItemSlot> = _res.iter().map(|w| w.item_slot.clone()).collect();
-    let image_urls: Vec<String> = _res.iter().map(|w| w.image_url.clone()).collect();
-    let image_url_larges: Vec<String> = _res.iter().map(|w| w.image_url_large.clone()).collect();
-
-    let sql = r#"
-        INSERT INTO weapons (id, name, stock, item_name, item_slot, image_url, image_url_large)
-        SELECT * FROM UNNEST(
-            $1::INT[],
-            $2::TEXT[],
-            $3::BOOL[],
-            $4::TEXT[],
-            $5::item_slot[],
-            $6::TEXT[],
-            $7::TEXT[]
-        )
-    "#;
-
-    sqlx::query(sql)
-    .bind(ids)
-    .bind(names)
-    .bind(stocks)
-    .bind(item_names)
-    .bind(item_slots)
-    .bind(image_urls)
-    .bind(image_url_larges)
-    .execute(&_neon_db)
-    .await?;
-
-    println!("hopefully");
 
 
     Ok(())
