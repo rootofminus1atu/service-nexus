@@ -49,7 +49,9 @@ CREATE TABLE IF NOT EXISTS loadouts (
     secondary INT NOT NULL REFERENCES weapons(id),
     melee INT NOT NULL REFERENCES weapons(id),
     name TEXT NOT NULL,
-    playstyle TEXT NOT NULL
+    playstyle TEXT NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 );
 
 
@@ -101,3 +103,15 @@ CREATE TRIGGER validate_loadout_weapons_update
 BEFORE UPDATE ON loadouts
 FOR EACH ROW
 EXECUTE FUNCTION check_loadout_weapons();
+
+CREATE OR REPLACE FUNCTION update_updated_at_column() RETURNS TRIGGER AS $$
+BEGIN
+    NEW.updated_at = CURRENT_TIMESTAMP;
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER set_updated_at
+BEFORE UPDATE ON loadouts
+FOR EACH ROW
+EXECUTE FUNCTION update_updated_at_column();

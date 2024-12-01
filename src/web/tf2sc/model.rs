@@ -174,13 +174,18 @@ pub enum Merc {
 
 #[derive(Debug, Clone, FromRow, Deserialize, Serialize)]
 pub struct Loadout {
+    #[serde(rename(serialize = "_id"))]
     pub id: Uuid,
     pub merc: Merc,
     pub primary: i32,
     pub secondary: i32,
     pub melee: i32,
     pub name: String,
-    pub playstyle: String
+    pub playstyle: String,
+    #[serde(rename(serialize = "createdAt"))]
+    pub created_at: chrono::DateTime<chrono::Utc>,
+    #[serde(rename(serialize = "updatedAt"))]
+    pub updated_at: chrono::DateTime<chrono::Utc>
 }
 
 #[derive(Debug, Clone, Deserialize, Validate)]

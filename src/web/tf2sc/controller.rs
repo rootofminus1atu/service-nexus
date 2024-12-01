@@ -1,16 +1,46 @@
 use axum::{extract::{Path, Query, State}, response::IntoResponse, Json};
 use serde::{Deserialize, Deserializer};
 use sqlx::{types::Uuid, PgPool};
+use strum_macros::{AsRefStr, EnumString};
 use std::str::FromStr;
 use serde::de;
-use validator::{Validate, ValidationError};
+use validator::Validate;
 use super::model::{ItemSlot, Loadout, LoadoutForCreate, LoadoutForUpdate, Merc, WeaponFromView, MongoStyle};
 
 #[derive(Deserialize)]
 pub struct MercSlotParams {
     merc: Option<Merc>,
-    slot: Option<ItemSlot>,
+    slot: Option<ItemSlot>
 }
+
+#[derive(Deserialize)]
+pub struct LoadoutParams {
+    sort: Option<Sort>,
+    #[serde(rename = "sortBy")]
+    sort_by: Option<SortBy>
+}
+
+#[derive(Deserialize, EnumString, AsRefStr, Default)]
+#[serde(rename_all = "lowercase")]
+enum Sort {
+    #[default]
+    #[strum(serialize = "DESC")]
+    Desc,
+    #[strum(serialize = "ASC")]
+    Asc
+}
+
+#[derive(Deserialize, EnumString, AsRefStr, Default)]
+#[serde(rename_all = "lowercase")]
+enum SortBy {
+    #[strum(serialize = "created_at")]
+    Created,
+    #[default]
+    #[strum(serialize = "updated_at")]
+    Updated
+}
+
+
 
 // might use it in the future
 #[allow(unused)]
@@ -68,8 +98,19 @@ pub async fn get_weapon(Path(id): Path<String>, State(db): State<PgPool>) -> Res
     Ok(Json(weapon))
 }
 
-pub async fn get_all_loadouts(State(db): State<PgPool>) -> Result<impl IntoResponse, super::Error> {
-    let loadouts = sqlx::query_as::<_, Loadout>("SELECT * FROM loadouts")
+pub async fn get_all_loadouts(State(db): State<PgPool>, Query(q): Query<LoadoutParams>) -> Result<impl IntoResponse, super::Error> {
+    let LoadoutParams { 
+        sort, 
+        sort_by
+    }  = q;
+
+    let query = format!(
+        "SELECT * FROM loadouts ORDER BY {} {}",
+        sort_by.unwrap_or_default().as_ref(),
+        sort.unwrap_or_default().as_ref()
+    );
+
+    let loadouts = sqlx::query_as::<_, Loadout>(&query)
         .fetch_all(&db)
         .await?;
 
