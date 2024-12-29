@@ -21,3 +21,5 @@ Cargo.lock
 Secrets.toml
 Shuttle.toml
 .env
+
+nogit
