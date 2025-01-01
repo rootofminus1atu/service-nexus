@@ -5,7 +5,7 @@ use strum_macros::{AsRefStr, EnumString};
 use std::str::FromStr;
 use serde::de;
 use validator::Validate;
-use super::model::{ItemSlot, Loadout, LoadoutForCreate, LoadoutForUpdate, Merc, WeaponFromView, MongoStyle};
+use super::{auth::AuthUser, model::{FullLoadout, ItemSlot, Loadout, LoadoutForCreate, LoadoutForUpdate, Merc, MongoStyle, WeaponFromView}};
 
 #[derive(Deserialize)]
 pub struct MercSlotParams {
@@ -105,12 +105,12 @@ pub async fn get_all_loadouts(State(db): State<PgPool>, Query(q): Query<LoadoutP
     }  = q;
 
     let query = format!(
-        "SELECT * FROM loadouts ORDER BY {} {}",
+        "SELECT * FROM full_loadouts ORDER BY {} {}",
         sort_by.unwrap_or_default().as_ref(),
         sort.unwrap_or_default().as_ref()
     );
 
-    let loadouts = sqlx::query_as::<_, Loadout>(&query)
+    let loadouts = sqlx::query_as::<_, FullLoadout>(&query)
         .fetch_all(&db)
         .await?;
 
@@ -121,7 +121,7 @@ pub async fn get_loadout(Path(id): Path<String>, State(db): State<PgPool>) -> Re
     let id = id.parse::<Uuid>()
         .map_err(|_| super::Error::InvalidLoadoutId)?;
 
-    let loadout = sqlx::query_as::<_, Loadout>("SELECT * FROM loadouts WHERE id = $1")
+    let loadout = sqlx::query_as::<_, FullLoadout>("SELECT * FROM full_loadouts WHERE id = $1")
         .bind(id)
         .fetch_optional(&db)
         .await?
@@ -130,16 +130,17 @@ pub async fn get_loadout(Path(id): Path<String>, State(db): State<PgPool>) -> Re
     Ok(Json(loadout))
 }
 
-pub async fn create_loadout(State(db): State<PgPool>, Json(loadout): Json<LoadoutForCreate>) -> Result<impl IntoResponse, super::Error> {
+pub async fn create_loadout(State(db): State<PgPool>, auth_user: AuthUser, Json(loadout): Json<LoadoutForCreate>) -> Result<impl IntoResponse, super::Error> {
     loadout.validate()?;
     
-    let created = sqlx::query_as::<_, Loadout>("INSERT INTO loadouts (merc, \"primary\", secondary, melee, name, playstyle) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *")
+    let created = sqlx::query_as::<_, Loadout>("INSERT INTO loadouts (user_id, merc, \"primary\", secondary, melee, name, playstyle) VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING *")
+        .bind(&auth_user.user_id)
         .bind(loadout.merc)
         .bind(loadout.primary)
         .bind(loadout.secondary)
         .bind(loadout.melee)
-        .bind(loadout.name)
-        .bind(loadout.playstyle)
+        .bind(&loadout.name)
+        .bind(&loadout.playstyle)
         .fetch_one(&db)
         .await?;
 

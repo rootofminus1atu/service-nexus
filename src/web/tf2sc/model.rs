@@ -4,6 +4,7 @@ use serde::Serialize;
 use sqlx::types::Uuid;
 use sqlx::FromRow;
 use sqlx::Type;
+use sqlx::types::Json;
 use sqlx;
 use strum_macros::Display;
 use strum_macros::EnumString;
@@ -22,6 +23,7 @@ pub struct WeaponFromView {
     image_url_large: String,
     merc: Option<Merc>
 }
+
 
 // TODO: use associated type
 pub trait MongoStyle {
@@ -176,10 +178,41 @@ pub enum Merc {
 pub struct Loadout {
     #[serde(rename(serialize = "_id"))]
     pub id: Uuid,
+    #[serde(rename(serialize = "userId"))]
+    pub user_id: String,
     pub merc: Merc,
     pub primary: i32,
     pub secondary: i32,
     pub melee: i32,
+    pub name: String,
+    pub playstyle: String,
+    #[serde(rename(serialize = "createdAt"))]
+    pub created_at: chrono::DateTime<chrono::Utc>,
+    #[serde(rename(serialize = "updatedAt"))]
+    pub updated_at: chrono::DateTime<chrono::Utc>
+}
+
+#[derive(Debug, Clone, FromRow, Deserialize, Serialize)]
+pub struct Weapon {
+    id: i32,
+    name: String,
+    stock: bool,
+    item_name: String,
+    item_slot: ItemSlot,
+    image_url: String,
+    image_url_large: String
+}
+
+#[derive(Debug, Clone, FromRow, Deserialize, Serialize)]
+pub struct FullLoadout {
+    #[serde(rename(serialize = "_id"))]
+    pub id: Uuid,
+    #[serde(rename(serialize = "userId"))]
+    pub user_id: String,
+    pub merc: Merc,
+    pub primary: Json<Weapon>,
+    pub secondary: Json<Weapon>,
+    pub melee: Json<Weapon>,
     pub name: String,
     pub playstyle: String,
     #[serde(rename(serialize = "createdAt"))]

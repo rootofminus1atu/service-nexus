@@ -39,6 +39,7 @@ pub async fn setup_web_server(secret_store: &SecretStore) -> Result<Router, shut
     let supabase_url = senv!(secret_store, SUPABASE_URL);
     let neon_url = senv!(secret_store, NEON_URL);
 
+    info!("starting connections");
 
     let mongo_client = mongodb::Client::with_uri_str(mongo_uri).await
         .map_err(|e| shuttle_runtime::Error::Database(format!("could not connect to mongo: {}", e)))?;
@@ -71,6 +72,19 @@ pub async fn setup_web_server(secret_store: &SecretStore) -> Result<Router, shut
             .allow_headers(cors::Any)
         );
 
+        /*
+                .layer(
+            TraceLayer::new_for_http()
+                .on_request(|_request: &Request<_>, _span: &Span| {
+                    println!("{:?}", _request);
+                    tracing::info!("{:?}", _request);
+                })
+                .on_response(|_response: &Response, _latency: Duration, _span: &Span| {
+                    tracing::info!("{:?} {:?}", _response, _latency);
+                }),
+        );
+         */
+
     Ok(router)
 }
 
@@ -81,11 +95,19 @@ pub struct ClientWithKeys {
 }
 
 impl ClientWithKeys {
-    pub fn new(cat_api_key: String) -> Self {
+    pub fn new_w_client(client: reqwest::Client, cat_api_key: String) -> Self {
         Self {
-            client: reqwest::Client::new(),
+            client,
             cat_api_key: Arc::new(cat_api_key)
         }
+    }
+
+    pub fn new(cat_api_key: String) -> Self {
+        Self::new_w_client(reqwest::Client::new(), cat_api_key)
+        // Self {
+        //     client: reqwest::Client::new(),
+        //     cat_api_key: Arc::new(cat_api_key)
+        // }
     }
 }
 

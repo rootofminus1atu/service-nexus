@@ -44,6 +44,7 @@ ORDER BY w.stock DESC, w.id;
 
 CREATE TABLE IF NOT EXISTS loadouts (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id TEXT NOT NULL,
     merc merc NOT NULL,
     "primary" INT NOT NULL REFERENCES weapons(id),
     secondary INT NOT NULL REFERENCES weapons(id),
@@ -53,6 +54,41 @@ CREATE TABLE IF NOT EXISTS loadouts (
     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 );
+
+CREATE VIEW full_loadouts AS
+SELECT
+    l.*,
+    jsonb_build_object(
+        'id', wd_primary.id,
+        'name', wd_primary.name,
+        'stock', wd_primary.stock,
+        'item_name', wd_primary.item_name,
+        'item_slot', wd_primary.item_slot,
+        'image_url', wd_primary.image_url,
+        'image_url_large', wd_primary.image_url_large
+    ) AS primary_weapon,
+    jsonb_build_object(
+        'id', wd_secondary.id,
+        'name', wd_secondary.name,
+        'stock', wd_secondary.stock,
+        'item_name', wd_secondary.item_name,
+        'item_slot', wd_secondary.item_slot,
+        'image_url', wd_secondary.image_url,
+        'image_url_large', wd_secondary.image_url_large
+    ) AS secondary_weapon,
+    jsonb_build_object(
+        'id', wd_melee.id,
+        'name', wd_melee.name,
+        'stock', wd_melee.stock,
+        'item_name', wd_melee.item_name,
+        'item_slot', wd_melee.item_slot,
+        'image_url', wd_melee.image_url,
+        'image_url_large', wd_melee.image_url_large
+    ) AS melee_weapon
+FROM loadouts l
+LEFT JOIN weapons wd_primary ON l.primary = wd_primary.id
+LEFT JOIN weapons wd_secondary ON l.secondary = wd_secondary.id
+LEFT JOIN weapons wd_melee ON l.melee = wd_melee.id;
 
 
 CREATE OR REPLACE FUNCTION check_loadout_weapons() RETURNS TRIGGER AS $$
