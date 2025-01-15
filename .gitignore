@@ -23,3 +23,5 @@ Shuttle.toml
 .env
 
 nogit
+.shuttle*
+Secrets*.toml
