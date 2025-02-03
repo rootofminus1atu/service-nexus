@@ -35,8 +35,8 @@ macro_rules! senv {
 pub async fn setup_web_server(secret_store: &SecretStore) -> Result<Router, shuttle_runtime::Error> {
     let cat_api_key = senv!(secret_store, CAT_API_KEY);
     let mongo_uri = senv!(secret_store, MONGO_URI);
-    let database_url = senv!(secret_store, DATABASE_URL);
-    let supabase_url = senv!(secret_store, SUPABASE_URL);
+    // let database_url = senv!(secret_store, DATABASE_URL);
+    // let supabase_url = senv!(secret_store, SUPABASE_URL);
     let neon_url = senv!(secret_store, NEON_URL);
 
     info!("starting connections");
@@ -46,12 +46,12 @@ pub async fn setup_web_server(secret_store: &SecretStore) -> Result<Router, shut
     info!("connected to mongo");
     let mongo_db = mongo_client.database("unboxcat");
 
-    let supabase_db = PgPool::connect(&database_url).await
-        .map_err(|e| shuttle_runtime::Error::Database(format!("could not connect to supabase: {}", e)))?;
-    info!("connected to postgres");
-    let supabase_storage = Storage::new("cenzo", &supabase_url);
-    let supabase = Arc::new(SupabaseResources::new(supabase_db, supabase_storage));
-    info!("created supabase");
+    // let supabase_db = PgPool::connect(&database_url).await
+    //     .map_err(|e| shuttle_runtime::Error::Database(format!("could not connect to supabase: {}", e)))?;
+    // info!("connected to postgres");
+    // let supabase_storage = Storage::new("cenzo", &supabase_url);
+    // let supabase = Arc::new(SupabaseResources::new(supabase_db, supabase_storage));
+    // info!("created supabase");
 
     let neon_db = PgPool::connect(&neon_url).await
         .map_err(|e| shuttle_runtime::Error::Database(format!("could not connect to neon: {}", e)))?;
@@ -63,7 +63,7 @@ pub async fn setup_web_server(secret_store: &SecretStore) -> Result<Router, shut
     let router = Router::new()
         .nest("/cats", self::cats::routes(mongo_db))
         .nest("/timetable", self::timetable::routes())
-        .nest("/jp2", self::jp2::routes(supabase))
+        // .nest("/jp2", self::jp2::routes(supabase))
         .nest("/tf2sc", self::tf2sc::routes(neon_db))
         .layer(Extension(client))
         .layer(CorsLayer::new()
