@@ -11,6 +11,7 @@ mod cats;
 mod timetable;
 mod jp2;
 mod tf2sc;
+mod bustimetravel;
 
 /// ## senv = shuttle env
 /// Reads a shuttle secret from `SecretStore`, crashes the program if an env var with that name is not found.
@@ -38,6 +39,7 @@ pub async fn setup_web_server(secret_store: &SecretStore) -> Result<Router, shut
     // let database_url = senv!(secret_store, DATABASE_URL);
     // let supabase_url = senv!(secret_store, SUPABASE_URL);
     let neon_url = senv!(secret_store, NEON_URL);
+    let bus_api_key = senv!(secret_store, BUS_API_KEY);
 
     info!("starting connections");
 
@@ -57,7 +59,7 @@ pub async fn setup_web_server(secret_store: &SecretStore) -> Result<Router, shut
         .map_err(|e| shuttle_runtime::Error::Database(format!("could not connect to neon: {}", e)))?;
     info!("connected to neon");
 
-    let client = ClientWithKeys::new(cat_api_key);
+    let client = ClientWithKeys::new(cat_api_key, bus_api_key);
     info!("created new reqwest client");
 
     let router = Router::new()
@@ -65,6 +67,7 @@ pub async fn setup_web_server(secret_store: &SecretStore) -> Result<Router, shut
         .nest("/timetable", self::timetable::routes())
         // .nest("/jp2", self::jp2::routes(supabase))
         .nest("/tf2sc", self::tf2sc::routes(neon_db))
+        .nest("/bustimetravel", self::bustimetravel::routes(client.clone()))
         .layer(Extension(client))
         .layer(CorsLayer::new()
             .allow_origin(cors::Any)
@@ -91,19 +94,21 @@ pub async fn setup_web_server(secret_store: &SecretStore) -> Result<Router, shut
 #[derive(Debug, Clone)]
 pub struct ClientWithKeys {
     client: reqwest::Client,
-    cat_api_key: Arc<String>
+    cat_api_key: Arc<String>,
+    bus_api_key: Arc<String>
 }
 
 impl ClientWithKeys {
-    pub fn new_w_client(client: reqwest::Client, cat_api_key: String) -> Self {
+    pub fn new_w_client(client: reqwest::Client, cat_api_key: String, bus_api_key: String) -> Self {
         Self {
             client,
-            cat_api_key: Arc::new(cat_api_key)
+            cat_api_key: Arc::new(cat_api_key),
+            bus_api_key: Arc::new(bus_api_key)
         }
     }
 
-    pub fn new(cat_api_key: String) -> Self {
-        Self::new_w_client(reqwest::Client::new(), cat_api_key)
+    pub fn new(cat_api_key: String, bus_api_key: String) -> Self {
+        Self::new_w_client(reqwest::Client::new(), cat_api_key, bus_api_key)
         // Self {
         //     client: reqwest::Client::new(),
         //     cat_api_key: Arc::new(cat_api_key)
