@@ -1,5 +1,6 @@
-use std::sync::Arc;
+use std::sync::{Arc, LazyLock};
 use axum::{Extension, Router};
+use bustimetravel::ROUTES;
 use serde::{Deserialize, Serialize};
 use shuttle_runtime::SecretStore;
 use sqlx::PgPool;
@@ -40,6 +41,9 @@ pub async fn setup_web_server(secret_store: &SecretStore) -> Result<Router, shut
     // let supabase_url = senv!(secret_store, SUPABASE_URL);
     let neon_url = senv!(secret_store, NEON_URL);
     let bus_api_key = senv!(secret_store, BUS_API_KEY);
+    
+    info!("PLEASE???");
+    LazyLock::force(&ROUTES);
 
     info!("starting connections");
 

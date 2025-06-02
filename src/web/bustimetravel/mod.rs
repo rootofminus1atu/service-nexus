@@ -1,14 +1,12 @@
 use axum::response::IntoResponse;
 use axum::{Extension, Json, Router};
-use axum::routing::{get, post};
+use axum::routing::get;
 use axum::http::StatusCode;
 use serde::{Deserialize, Serialize};
 use tracing::error;
 use std::{collections::HashMap, sync::Arc};
 use tokio::sync::Mutex;
-use dotenvy::dotenv;
 use chrono::Utc;
-use tower_http::cors::{CorsLayer, Any};
 use std::sync::LazyLock;
 
 use super::ClientWithKeys;
@@ -53,7 +51,14 @@ pub fn routes(client: ClientWithKeys) -> Router {
 type LocationHistory = Arc<Mutex<Vec<Record>>>;
 
 pub static ROUTES: LazyLock<HashMap<String, RouteInfo>> = LazyLock::new(|| {
-    let contents = std::fs::read_to_string("routes.txt").expect("Failed to read routes file");
+    let cwd = std::env::current_dir().unwrap();
+    println!("Current working directory: {:?}", cwd);
+    for entry in std::fs::read_dir(&cwd).unwrap() {
+        let entry = entry.unwrap();
+        println!(" - {:?}", entry.file_name());
+    }
+
+    let contents = std::fs::read_to_string("assets/routes.txt").expect("Failed to read routes file");
     let mut rdr = csv::ReaderBuilder::new()
         .has_headers(true)
         .from_reader(contents.as_bytes());
@@ -96,7 +101,7 @@ async fn get_location(client: &ClientWithKeys) -> Result<Record, Error> {
     }
 
     let pretty = serde_json::to_string_pretty(&res).unwrap_or_default();
-    for (i, line) in pretty.lines().take(50).enumerate() {
+    for (i, line) in pretty.lines().take(20).enumerate() {
         println!("{:02}: {}", i + 1, line);
     }
     let res: Res = serde_json::from_value(res)?;
