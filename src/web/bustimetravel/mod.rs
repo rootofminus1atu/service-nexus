@@ -51,6 +51,22 @@ pub fn routes(client: ClientWithKeys) -> Router {
 type LocationHistory = Arc<Mutex<Vec<Record>>>;
 
 pub static ROUTES: LazyLock<HashMap<String, RouteInfo>> = LazyLock::new(|| {
+    println!("NEW DEBUG STUFF");
+    let assets_dir = std::path::Path::new("assets");
+    if let Ok(entries) = std::fs::read_dir(assets_dir) {
+        for entry in entries {
+            if let Ok(entry) = entry {
+                println!("Found file: {:?}", entry.file_name());
+            }
+        }
+    }
+
+    let cwd = std::env::current_dir().unwrap();
+    let file_path = cwd.join("assets").join("routes.txt");
+    let contents = std::fs::read_to_string(file_path).expect("Failed to read routes file");
+    println!("AFTER NEW STUFF");
+
+
     let cwd = std::env::current_dir().unwrap();
     println!("Current working directory: {:?}", cwd);
     for entry in std::fs::read_dir(&cwd).unwrap() {

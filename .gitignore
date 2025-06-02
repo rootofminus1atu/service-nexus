@@ -19,7 +19,7 @@ Cargo.lock
 /target
 
 Secrets.toml
-Shuttle.toml
+# Shuttle.toml
 .env
 
 nogit

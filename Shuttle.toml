@@ -1,0 +1,7 @@
+name = "servicenexus"
+
+[deploy]
+include = ["assets"]
+
+[build]
+assets = ["assets"]
