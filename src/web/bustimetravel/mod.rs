@@ -123,10 +123,11 @@ async fn get_location(client: &ClientWithKeys) -> Result<Record, Error> {
     let res: Res = serde_json::from_value(res)?;
 
 
-    let route_ids = ["4658_98094", "4658_98097", "4658_98087", "4658_98244"];
+    let route_ids = ["5241_118111"];
+    let route_id = route_ids[0];
     
-    // let entity = res.entity.iter().find(|e| e.vehicle.trip.route_id == route_id).expect("damn it doesnt exist wtf");
-    // dbg!(&entity);
+    let entity = res.entity.iter().find(|e| e.vehicle.trip.route_id == route_id).expect("damn it doesnt exist wtf");
+    dbg!(&entity);
     
     let locations = res.entity.iter()
         .filter(|e| route_ids.contains(&e.vehicle.trip.route_id.as_str()))
@@ -140,8 +141,8 @@ async fn get_location(client: &ClientWithKeys) -> Result<Record, Error> {
         .collect::<Vec<_>>();
 
     for loc in &locations {
-        let link = format!("https://www.google.com/maps?q={},{}", loc.lat, loc.lon);
-        println!("FOLLOW THE LINK: {}", link);
+        let link = format!("[{} - {}]: https://www.google.com/maps?q={},{}", loc.route.route_id, loc.route.short_name, loc.lat, loc.lon);
+        println!("{}", link);
     }
 
     let record = Record {
